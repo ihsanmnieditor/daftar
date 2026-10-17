@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belia GENERASI Terengganu · Bersama GENERASI</title>
+<meta name="description" content="Sertai Parti Belia GENERASI Rakyat Terengganu. Daftar ahli, muat turun MyDigital ID & ePBMy, dan undi GENERASI pada 1 November 2026.">
+<meta property="og:site_name" content="beliagenerasiterengganu">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/logo-generasi.png">
+<meta property="og:title" content="Bersama GENERASI · Parti Belia GENERASI Rakyat Terengganu">
+<meta property="og:description" content="1 November nanti, UNDI GENERASI. Demi belia yang progresif, inklusif & sejahtera.">
+<meta name="theme-color" content="#24369a">
+<link rel="icon" type="image/png" href="assets/img/logo-generasi.png">
+<link rel="apple-touch-icon" href="assets/img/logo-generasi.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --blue:#24369a; --blue-2:#3149b8; --blue-d:#16246e; --navy:#0e1847;
+  --red:#e2402f; --red-d:#b92c1e; --yellow:#f7c600; --green:#25d366;
+  --ink:#121733; --muted:#5b6285; --soft:#eef1fb; --line:#dfe4f6; --white:#fff;
+  --r:22px; --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;overflow-x:clip}
+body{font-family:'Outfit',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body.locked{overflow:hidden}
+h1,h2,h3,.uf{font-family:'Unbounded','Outfit',sans-serif;line-height:1.08}
+a{color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:96px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Unbounded';font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.eyebrow:before{content:"";width:28px;height:3px;border-radius:3px;background:currentColor}
+.h2{font-size:clamp(1.9rem,4.6vw,3rem);color:var(--blue);font-weight:800;letter-spacing:-.01em;margin-bottom:16px}
+.h2 .r{color:var(--red)}
+.sub{color:var(--muted);font-size:1.1rem;max-width:40em}
+.center{text-align:center}.center .sub{margin:0 auto}
+.center .eyebrow{justify-content:center}
+
+/* progress bar */
+#prog{position:fixed;top:0;left:0;height:4px;width:0;z-index:200;background:linear-gradient(90deg,var(--red),var(--yellow));border-radius:0 4px 4px 0}
+
+/* ===== SPLASH ===== */
+#splash{position:fixed;inset:0;z-index:300;display:grid;place-items:center;text-align:center;color:#fff;padding:24px;
+  background:radial-gradient(800px 500px at 80% 10%,rgba(247,198,0,.25),transparent 60%),radial-gradient(700px 500px at 10% 90%,rgba(226,64,47,.35),transparent 60%),linear-gradient(160deg,var(--blue-2),var(--blue-d) 70%);
+  transition:opacity .7s var(--ease),visibility .7s}
+#splash.hide{opacity:0;visibility:hidden}
+#splash .lines{position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 2px,transparent 2px 22px);pointer-events:none}
+.sp-in{position:relative;max-width:520px;animation:pop .9s var(--ease) both}
+.sp-logo{width:min(300px,72vw);margin:0 auto 22px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.35))}
+.sp-in h2{font-size:clamp(1.3rem,4.5vw,1.9rem);margin-bottom:8px}
+.sp-in p{opacity:.85;margin-bottom:26px}
+.sp-disc{width:120px;height:120px;margin:0 auto 26px;border-radius:50%;position:relative;
+  background:repeating-radial-gradient(circle,#1b1b2e 0 2px,#262640 2px 4px);box-shadow:0 0 0 6px rgba(255,255,255,.12),0 18px 40px rgba(0,0,0,.4);animation:spin 6s linear infinite}
+.sp-disc:after{content:"";position:absolute;inset:34%;border-radius:50%;background:var(--red) url(assets/img/logo-generasi.png) center/86% no-repeat;box-shadow:0 0 0 3px var(--yellow)}
+.sp-play{display:inline-flex;align-items:center;gap:14px;border:0;background:#fff;color:var(--blue);font-family:'Unbounded';font-weight:700;font-size:.95rem;padding:16px 30px 16px 16px;border-radius:999px;box-shadow:0 0 0 0 rgba(255,255,255,.6);animation:ring 2s infinite}
+.sp-play i{width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:1rem}
+.sp-play:hover{transform:scale(1.04)}
+.sp-skip{display:block;margin:18px auto 0;background:none;border:0;color:#fff;opacity:.7;text-decoration:underline;font-size:.9rem}
+.sp-notes span{position:absolute;font-size:28px;color:var(--yellow);opacity:.0;animation:floatNote 6s linear infinite}
+
+/* ===== NAV ===== */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid transparent;transition:.3s}
+.nav.scrolled{border-color:var(--line);box-shadow:0 6px 24px rgba(22,36,110,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;transition:height .3s}
+.nav.scrolled .wrap{height:62px}
+.brand img{height:46px;width:auto;transition:.3s}
+.nav.scrolled .brand img{height:36px}
+.menu{display:flex;gap:4px;list-style:none;align-items:center}
+.menu a{display:block;padding:9px 15px;border-radius:999px;text-decoration:none;font-weight:600;color:var(--blue);position:relative;transition:.25s}
+.menu a:hover{background:var(--soft)}
+.menu a.active{background:var(--blue);color:#fff}
+.menu a.wa-link{color:#128c46}
+.menu a.wa-link.active{background:#128c46;color:#fff}
+.burger{display:none;background:var(--soft);border:0;color:var(--blue);width:44px;height:44px;border-radius:12px;font-size:1.2rem}
+@media(max-width:900px){
+  .burger{display:grid;place-items:center}
+  .menu{position:absolute;top:100%;left:12px;right:12px;background:#fff;border-radius:18px;box-shadow:0 20px 50px rgba(22,36,110,.18);flex-direction:column;align-items:stretch;padding:10px;gap:2px;
+    transform-origin:top;transform:scaleY(.6);opacity:0;pointer-events:none;transition:.25s var(--ease)}
+  .menu.open{transform:none;opacity:1;pointer-events:auto}
+  .menu a{padding:12px 16px}
+}
+
+/* ===== BUTTONS ===== */
+.btn{--bg:var(--blue);--fg:#fff;position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;font-family:'Unbounded';font-weight:700;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:16px 28px;border-radius:999px;border:0;background:var(--bg);color:var(--fg);box-shadow:0 10px 24px -8px color-mix(in srgb,var(--bg) 70%,transparent);transition:transform .25s var(--ease),box-shadow .25s}
+.btn:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 3.6s ease-in-out infinite}
+.btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 30px -8px color-mix(in srgb,var(--bg) 80%,transparent)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.red{--bg:var(--red)}
+.btn.ghost{--bg:#fff;--fg:var(--blue);box-shadow:inset 0 0 0 2.5px var(--blue)}
+.btn.ghost:after{background:linear-gradient(100deg,transparent,rgba(36,54,154,.12),transparent)}
+.btn i{font-size:1rem}
+
+/* ===== HERO ===== */
+.hero{padding:40px 0 90px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+.b1{width:420px;height:420px;background:#f7c60055;right:-120px;top:-80px}
+.b2{width:380px;height:380px;background:#e2402f33;left:-140px;bottom:-60px;animation-delay:-5s}
+.b3{width:300px;height:300px;background:#3149b833;left:40%;top:30%;animation-delay:-9s}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+@media(max-width:940px){.hero .wrap{grid-template-columns:1fr;gap:48px}}
+.cd-label{font-family:'Unbounded';font-weight:800;color:var(--red);letter-spacing:.06em;font-size:.95rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.live{width:10px;height:10px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(226,64,47,.6);animation:ring 1.6s infinite}
+.cd{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.cd-box{background:linear-gradient(140deg,var(--blue-2),var(--blue-d));color:#fff;border-radius:16px;padding:12px 16px 12px 12px;display:flex;gap:14px;align-items:center;box-shadow:0 14px 30px -12px rgba(22,36,110,.6);min-width:236px;flex:1 1 236px;max-width:300px}
+.cd-box.red{background:linear-gradient(140deg,#f05a3f,var(--red-d))}
+.cd-num{font-family:'Unbounded';font-weight:900;font-size:2.3rem;min-width:74px;text-align:center;background:rgba(255,255,255,.16);border-radius:12px;padding:6px 10px;line-height:1.15}
+.cd-num.bump{animation:bump .5s var(--ease)}
+.cd-lab small{display:block;font-size:.66rem;letter-spacing:.16em;opacity:.75;font-weight:600}
+.cd-lab strong{display:block;font-size:.95rem;letter-spacing:.02em}
+.cd-lab em{font-style:normal;font-size:.78rem;opacity:.8;font-variant-numeric:tabular-nums}
+h1.title{font-size:clamp(3rem,9vw,5.6rem);font-weight:900;color:var(--blue);letter-spacing:-.02em;margin-bottom:22px}
+h1.title .w{display:block;white-space:nowrap}
+h1.title .ch{display:inline-block;opacity:0;transform:translateY(60%) rotate(8deg);animation:rise .8s var(--ease) forwards}
+h1.title .ch.red{color:var(--red)}
+h1.title .w2 .ch{background:linear-gradient(90deg,var(--blue) 0%,var(--blue-2) 40%,var(--blue) 80%);-webkit-background-clip:text;background-clip:text}
+.lead{font-size:1.18rem;color:#2a3056;max-width:32em;margin-bottom:30px}
+.lead b{color:var(--red)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.socials{display:flex;align-items:center;gap:10px;margin-top:32px;flex-wrap:wrap}
+.socials a.ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--soft);color:var(--blue);text-decoration:none;font-size:1.15rem;transition:.25s var(--ease)}
+.socials a.ic:hover{background:var(--blue);color:#fff;transform:translateY(-4px) rotate(-6deg)}
+.socials .handle{font-weight:700;color:var(--blue);padding-left:12px;border-left:2px solid var(--line);margin-left:4px}
+.poster-wrap{position:relative;justify-self:center;width:min(100%,460px)}
+.poster{border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(22,36,110,.55);transform:rotate(3deg);transition:transform .5s var(--ease);cursor:zoom-in;animation:bob 6s ease-in-out infinite}
+.poster:hover{transform:rotate(0) scale(1.02)}
+.poster-badge{position:absolute;left:-18px;top:28px;background:#fff;border-radius:16px;padding:10px 14px;box-shadow:0 14px 30px rgba(22,36,110,.2);display:flex;align-items:center;gap:10px;font-weight:700;color:var(--blue);font-size:.9rem;animation:bob 5s ease-in-out infinite reverse;z-index:2}
+.poster-badge i{width:34px;height:34px;border-radius:10px;background:var(--yellow);display:grid;place-items:center;color:var(--blue-d)}
+.poster-music{position:absolute;right:-14px;bottom:36px;z-index:2;background:linear-gradient(140deg,var(--blue-2),var(--blue-d));color:#fff;border:0;border-radius:18px;padding:10px 16px 10px 10px;display:flex;align-items:center;gap:12px;box-shadow:0 18px 36px -10px rgba(22,36,110,.6);animation:bob 4.6s ease-in-out infinite}
+.poster-music .pm-ic{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.18);display:grid;place-items:center}
+.poster-music b{display:block;font-size:.9rem;text-align:left}
+.poster-music small{display:block;font-size:.72rem;opacity:.8;text-align:left}
+@media(max-width:520px){.poster-badge{left:-6px}.poster-music{right:-4px}}
+
+.hero .wrap>*{min-width:0}
+.cd-card{width:100%;max-width:470px;justify-self:center;background:#fff;border-radius:28px;padding:20px;border:1.5px solid var(--line);box-shadow:0 30px 60px -24px rgba(22,36,110,.35);position:relative}
+.cd-card:before{content:"";position:absolute;inset:-2px;border-radius:30px;padding:2px;background:linear-gradient(135deg,var(--red),var(--yellow),var(--blue));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.cd-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.cd-head img{height:40px}
+.cd-head .cd-label{margin:0}
+.cd-row{border-radius:20px;padding:14px;color:#fff;margin-bottom:12px;background:linear-gradient(140deg,var(--blue-2),var(--blue-d));box-shadow:0 14px 28px -14px rgba(22,36,110,.7)}
+.cd-row.red{background:linear-gradient(140deg,#f05a3f,var(--red-d));box-shadow:0 14px 28px -14px rgba(185,44,30,.7)}
+.cd-title{display:flex;justify-content:space-between;align-items:baseline;gap:4px 10px;flex-wrap:wrap;margin-bottom:10px}
+.cd-title strong{font-family:'Unbounded';font-size:.92rem;letter-spacing:.04em}
+.cd-title small{opacity:.88;font-size:.8rem;font-weight:600}
+.units{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.units div{background:rgba(255,255,255,.16);border-radius:12px;padding:8px 2px 6px;text-align:center}
+.units b{display:block;font-family:'Unbounded';font-weight:900;font-size:clamp(1.25rem,6.2vw,2rem);line-height:1.1;font-variant-numeric:tabular-nums}
+.units b.bump{animation:bump .5s var(--ease)}
+.units span{display:block;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;opacity:.82;font-weight:600}
+.cd-row.done .units{opacity:.45}
+.cd-row.live{background:linear-gradient(140deg,#1aa053,#0b6b37)}
+.cd-music{width:100%;border:0;background:var(--soft);color:var(--blue);border-radius:18px;padding:10px 14px 10px 10px;display:flex;align-items:center;gap:12px;text-align:left;transition:.25s var(--ease)}
+.cd-music:hover{background:#e3e8fb;transform:translateY(-2px)}
+.cd-music .pm-ic{width:42px;height:42px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;flex:none;animation:ringR 2s infinite}
+.cd-music .pm-t{flex:1;min-width:0}
+.cd-music b{display:block;font-size:.95rem}
+.cd-music small{color:var(--muted);font-size:.78rem}
+.cd-music .eq i{background:var(--red)}
+body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
+@keyframes ringR{0%{box-shadow:0 0 0 0 rgba(226,64,47,.5)}70%{box-shadow:0 0 0 12px rgba(226,64,47,0)}100%{box-shadow:0 0 0 0 rgba(226,64,47,0)}}
+@media(max-width:940px){.cd-card{order:-1}}
+.party{display:flex;gap:12px;align-items:flex-start;background:#fff4f2;border:1.5px solid #f6cfc9;border-left:5px solid var(--red);border-radius:14px;padding:12px 14px;margin:-6px 0 18px;position:relative}
+.party>i{color:var(--red);margin-top:4px}
+.party small{display:block;color:var(--muted);font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.party b{display:block;color:var(--blue);margin-bottom:6px;line-height:1.3}
+.party b:last-child{margin-bottom:0}
+.pimg img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
+.daftar .wrap>*,.penaung>*,.pb-section>*,.steps>*,.info-grid>*,.stage>*{min-width:0}
+/* marquee */
+.marquee{background:var(--blue);color:#fff;overflow:hidden;padding:16px 0;transform:rotate(-1.2deg) scaleX(1.03);margin:-10px 0 0;box-shadow:0 10px 30px -10px rgba(22,36,110,.5)}
+.marquee .track{display:flex;gap:40px;width:max-content;animation:marq 26s linear infinite;font-family:'Unbounded';font-weight:800;font-size:1.05rem;letter-spacing:.06em}
+.marquee span{display:flex;align-items:center;gap:40px;white-space:nowrap}
+.marquee i{color:var(--yellow);font-size:.8rem}
+
+/* ===== TAKWIM ===== */
+.takwim{background:linear-gradient(180deg,#fff,var(--soft))}
+.tl{position:relative;max-width:980px;margin:56px auto 0}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;background:var(--line);border-radius:4px}
+.tl-line i{position:absolute;inset:0;background:linear-gradient(var(--blue),var(--red));border-radius:4px;transform-origin:top;transform:scaleY(var(--p,0))}
+.tl-item{position:relative;width:50%;padding:0 46px 34px 0}
+.tl-item:nth-child(odd){margin-left:50%;padding:0 0 34px 46px}
+.tl-dot{position:absolute;top:22px;right:-15px;width:30px;height:30px;border-radius:50%;background:#fff;border:5px solid var(--blue);z-index:1}
+.tl-item:nth-child(odd) .tl-dot{left:-15px;right:auto;border-color:var(--red)}
+.tl-card{background:#fff;border-radius:20px;padding:18px 20px;display:flex;gap:16px;align-items:center;box-shadow:0 12px 30px -14px rgba(22,36,110,.35);border:2px solid var(--blue);transition:.3s var(--ease)}
+.tl-item:nth-child(odd) .tl-card{border-color:var(--red)}
+.tl-card:hover{transform:translateY(-4px) scale(1.01)}
+.tl-ic{flex:none;width:58px;height:58px;border-radius:16px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:1.4rem;position:relative}
+.tl-item:nth-child(odd) .tl-ic{background:var(--red)}
+.tl-ic b{position:absolute;top:-8px;left:-8px;width:26px;height:26px;border-radius:50%;background:var(--yellow);color:var(--blue-d);font-size:.8rem;display:grid;place-items:center;font-family:'Unbounded'}
+.tl-card h3{font-size:1.15rem;color:var(--blue)}
+.tl-item:nth-child(odd) .tl-card h3{color:var(--red)}
+.tl-card p{color:var(--muted);line-height:1.4}
+.tl-item.hot .tl-card{background:linear-gradient(120deg,#fff 60%,#fff7d1);border-color:var(--yellow)}
+.tl-item.hot .tl-ic{background:var(--yellow);color:var(--blue-d)}
+.tl-chip{display:inline-block;margin-top:6px;font-size:.7rem;font-weight:800;letter-spacing:.08em;background:var(--red);color:#fff;padding:2px 10px;border-radius:999px}
+.upd{display:block;margin:10px auto 0;width:max-content;background:var(--red);color:#fff;font-size:.8rem;font-weight:600;padding:6px 18px;border-radius:999px}
+@media(max-width:760px){
+  .tl-line{left:16px}
+  .tl-item,.tl-item:nth-child(odd){width:100%;margin-left:0;padding:0 0 22px 48px}
+  .tl-dot,.tl-item:nth-child(odd) .tl-dot{left:2px;right:auto}
+  .tl-ic{width:48px;height:48px;font-size:1.15rem}
+}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.pil{border-radius:18px;padding:18px;display:flex;gap:14px;align-items:center;background:#fff;border:1.5px solid var(--line);font-weight:700;color:var(--blue);transition:.3s var(--ease)}
+.pil:hover{transform:translateY(-4px);border-color:var(--blue)}
+.pil i{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#fff;background:var(--blue);font-size:1.1rem;flex:none}
+.pil:nth-child(2) i{background:var(--red)}.pil:nth-child(3) i{background:var(--yellow);color:var(--blue-d)}
+@media(max-width:720px){.pillars{grid-template-columns:1fr}}
+
+/* ===== DAFTAR ===== */
+.daftar .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+@media(max-width:940px){.daftar .wrap{grid-template-columns:1fr}}
+.d-side{position:sticky;top:100px}
+@media(max-width:940px){.d-side{position:static}}
+.hash{font-family:'Unbounded';font-weight:900;font-size:clamp(2rem,5vw,3.2rem);line-height:1;margin-bottom:14px;background:linear-gradient(90deg,var(--blue),var(--red),var(--blue));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:grad 5s linear infinite}
+.d-side p{color:#2a3056;margin-bottom:20px}
+.checks{list-style:none;display:grid;gap:12px;margin-top:8px}
+.checks li{display:flex;gap:12px;align-items:flex-start;background:var(--soft);padding:14px 16px;border-radius:14px}
+.checks li i{color:#fff;background:var(--blue);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;flex:none;margin-top:1px}
+.checks li:nth-child(2) i{background:var(--red)}.checks li:nth-child(3) i{background:#128c46}
+.jf-card{background:#fff;border-radius:26px;padding:10px;box-shadow:0 30px 60px -24px rgba(22,36,110,.4);border:1.5px solid var(--line);position:relative}
+.jf-card:before{content:"";position:absolute;inset:-2px;border-radius:28px;padding:2px;background:linear-gradient(135deg,var(--blue),var(--red),var(--yellow));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.jf-wrap{position:relative;border-radius:18px;overflow:hidden;background:#fff}
+.jf-wrap iframe{display:block;width:100%;min-width:100%;border:0;height:1150px;transition:height .3s}
+.jf-cover{position:absolute;left:0;right:0;bottom:0;background:#fff;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:.85rem;font-weight:600}
+.jf-cover i{color:#128c46}
+.jf-open{display:flex;justify-content:center;align-items:center;gap:8px;margin:10px 4px 4px;padding:12px;border-radius:14px;background:var(--soft);color:var(--blue);font-weight:700;text-decoration:none;font-size:.92rem;text-align:center}
+.jf-open:hover{background:#e3e8fb}
+.jf-loading{position:absolute;inset:0;display:grid;place-items:center;background:#fff;color:var(--blue);font-weight:700;transition:opacity .4s}
+.jf-loading.done{opacity:0;pointer-events:none}
+.spinner{width:42px;height:42px;border-radius:50%;border:4px solid var(--soft);border-top-color:var(--red);animation:spin 1s linear infinite;margin:0 auto 10px}
+
+/* ===== PBMy ===== */
+.pbmy{background:linear-gradient(160deg,var(--blue-2),var(--blue-d));color:#fff;overflow:hidden}
+.pbmy .lines{position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.04) 0 2px,transparent 2px 22px);pointer-events:none}
+.pbmy .h2{color:#fff}.pbmy .eyebrow{color:var(--yellow)}
+.pbmy .sub{color:rgba(255,255,255,.82)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:38px 0 44px}
+@media(max-width:800px){.info-grid{grid-template-columns:1fr}}
+.info{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:18px 20px;display:flex;gap:14px;backdrop-filter:blur(6px)}
+.info i{flex:none;width:40px;height:40px;border-radius:12px;background:var(--yellow);color:var(--blue-d);display:grid;place-items:center}
+.uses{background:#fff;color:var(--ink);border-radius:18px;padding:18px 20px;grid-column:1/-1;display:grid;grid-template-columns:auto 1fr 1fr;gap:16px;align-items:center}
+.uses h3{font-size:.9rem;color:var(--blue);max-width:9em}
+.uses div{display:flex;gap:12px;align-items:center;font-weight:600}
+.uses div b{flex:none;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:'Unbounded'}
+@media(max-width:800px){.uses{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;color:var(--ink);border-radius:24px;padding:26px;position:relative;overflow:hidden}
+.step .no{position:absolute;right:-6px;top:-24px;font-family:'Unbounded';font-weight:900;font-size:7rem;color:var(--soft);line-height:1}
+.step h3{position:relative;font-size:1.25rem;color:var(--blue);margin-bottom:8px}
+.step .flow{position:relative;display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 20px}
+.step .flow span{background:var(--soft);color:var(--blue);font-weight:600;font-size:.85rem;padding:6px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:6px}
+.step .flow span.hl{background:var(--red);color:#fff}.step .flow span.ar{background:none;padding:6px 2px;color:var(--red)}
+.stores{position:relative;display:flex;gap:10px;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;gap:12px;background:#0d0f1f;color:#fff;text-decoration:none;border-radius:14px;padding:10px 18px 10px 14px;min-width:178px;transition:.25s var(--ease);position:relative;overflow:hidden}
+.store i{font-size:1.75rem;width:28px;text-align:center}
+.store small{display:block;font-size:.66rem;opacity:.8;letter-spacing:.03em}
+.store b{display:block;font-size:1.05rem;line-height:1.1}
+.store:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.5)}
+.store.play i{background:linear-gradient(135deg,#00d7fe,#00f076 40%,#ffc900 70%,#ff3a44);-webkit-background-clip:text;background-clip:text;color:transparent}
+.store:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.25),transparent);transform:skewX(-20deg);animation:shine 4s ease-in-out infinite}
+.next-row{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:40px;flex-wrap:wrap}
+.next-row span{font-family:'Unbounded';font-weight:800;font-size:1.4rem;color:var(--yellow)}
+
+/* ===== WHATSAPP ===== */
+.wa-card{max-width:880px;margin:0 auto;border-radius:32px;padding:56px 32px;text-align:center;color:#fff;position:relative;overflow:hidden;background:radial-gradient(500px 300px at 90% 0,rgba(37,211,102,.4),transparent 60%),linear-gradient(150deg,#0f7a3e,#075e54)}
+.wa-card .bubble{position:absolute;border-radius:50%;background:rgba(255,255,255,.08);animation:drift 10s ease-in-out infinite alternate}
+.wa-ic{width:96px;height:96px;margin:0 auto 22px;border-radius:28px;background:#fff;color:var(--green);display:grid;place-items:center;font-size:3.2rem;box-shadow:0 0 0 0 rgba(255,255,255,.5);animation:ring 2.2s infinite,bob 4s ease-in-out infinite}
+.wa-card h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:12px}
+.wa-card p{max-width:34em;margin:0 auto 28px;opacity:.92}
+.wa-btn{display:inline-flex;align-items:center;gap:14px;background:#fff;color:#075e54;text-decoration:none;font-family:'Unbounded';font-weight:800;font-size:1rem;padding:14px 30px 14px 14px;border-radius:999px;transition:.25s var(--ease);position:relative;overflow:hidden}
+.wa-btn i{width:46px;height:46px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:1.5rem}
+.wa-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 16px 30px -8px rgba(0,0,0,.4)}
+
+/* ===== TENTANG: PENAUNG ===== */
+.tentang{background:linear-gradient(180deg,#fff,var(--soft) 60%,#fff)}
+.penaung{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start;margin-top:40px}
+@media(max-width:900px){.penaung{grid-template-columns:1fr;gap:40px}}
+.pn-photo{position:relative;max-width:420px;margin:0 auto;width:100%}
+.pn-photo .arch{border-radius:220px 220px 26px 26px;overflow:hidden;background:linear-gradient(180deg,var(--blue-2),var(--blue-d));box-shadow:0 30px 60px -24px rgba(22,36,110,.55);aspect-ratio:3/4}
+.pn-photo .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.pn-photo:before{content:"";position:absolute;inset:-14px -14px 40px;border-radius:230px 230px 30px 30px;border:3px dashed var(--yellow);z-index:-1;animation:spin 60s linear infinite;animation:none}
+.pn-ring{position:absolute;width:110px;height:110px;border-radius:50%;border:14px solid var(--red);right:-26px;top:40px;z-index:-1;animation:bob 6s ease-in-out infinite}
+.pn-dot{position:absolute;width:70px;height:70px;border-radius:50%;background:var(--yellow);left:-20px;bottom:110px;z-index:-1;animation:bob 5s ease-in-out infinite reverse}
+.pn-name{position:relative;margin:-46px 18px 0;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:0 18px 40px -16px rgba(22,36,110,.4);border-left:6px solid var(--red)}
+.pn-name b{display:block;color:var(--blue);font-family:'Unbounded';font-size:.92rem;line-height:1.3}
+.pn-name span{display:block;color:var(--muted);font-size:.88rem;margin-top:4px}
+.pn-name .tag{display:inline-block;margin-top:8px;background:var(--yellow);color:var(--blue-d);font-weight:800;font-size:.72rem;letter-spacing:.08em;padding:3px 10px;border-radius:999px}
+.pn-text{position:relative}
+.pn-text .salam{font-weight:600;color:var(--blue);margin-bottom:14px}
+.pn-text .salam em{display:block;font-family:'Bodoni Moda',serif;font-size:1.4rem;font-style:italic;color:var(--red)}
+.pn-body{position:relative;overflow:hidden;transition:max-height .8s var(--ease)}
+.pn-body p{margin-bottom:14px;color:#2a3056}
+.pn-body p:first-of-type:first-letter{float:left;font-family:'Unbounded';font-weight:900;font-size:3.4rem;line-height:.9;margin:6px 10px 0 0;color:var(--red)}
+.pull{margin:22px 0;padding:22px 24px 22px 64px;border-radius:20px;background:var(--blue);color:#fff;font-weight:600;font-size:1.1rem;position:relative}
+.pull:before{content:"\201C";position:absolute;left:18px;top:4px;font-family:'Bodoni Moda',serif;font-size:4.4rem;color:var(--yellow);line-height:1}
+.pn-body.clamp{max-height:420px}
+.pn-body.clamp:after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(transparent,var(--soft))}
+.more{margin-top:8px}
+.sign{margin-top:18px;padding-top:16px;border-top:2px solid var(--line)}
+.sign b{font-family:'Unbounded';color:var(--blue);font-size:.95rem}
+.sign span{display:block;color:var(--muted)}
+
+/* ===== FLIPBOOK ===== */
+.pb-section{margin-top:110px;display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
+@media(max-width:900px){.pb-section{grid-template-columns:1fr}}
+.chapters{display:grid;gap:8px;margin-top:24px}
+.chapters button{display:flex;align-items:center;gap:14px;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:12px 16px;text-align:left;color:var(--blue);font-weight:700;transition:.25s var(--ease)}
+.chapters button span{width:30px;height:30px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-family:'Unbounded';font-size:.75rem}
+.chapters button:hover{border-color:var(--blue);transform:translateX(4px)}
+.chapters button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.chapters button.on span{background:var(--red);color:#fff}
+@media(max-width:900px){.chapters{grid-template-columns:repeat(3,1fr)}.chapters button{flex-direction:column;gap:6px;text-align:center;font-size:.8rem;padding:10px 6px}}
+.book-stage{perspective:2600px;display:flex;flex-direction:column;align-items:center}
+.book{position:relative;width:min(100%,460px);aspect-ratio:722/1024;container-type:inline-size;user-select:none}
+.book:before,.book:after{content:"";position:absolute;inset:0;border-radius:4px 14px 14px 4px;background:#e9ecf6;transform:translate(8px,8px);z-index:0;box-shadow:0 30px 60px -20px rgba(22,36,110,.5)}
+.book:after{transform:translate(4px,4px);background:#f5f6fb}
+.pg{position:absolute;inset:0;z-index:1;transform-origin:left center;transition:transform 1s cubic-bezier(.645,.045,.355,1),filter 1s;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:3px 12px 12px 3px;overflow:hidden;background:#fff;box-shadow:0 2px 0 rgba(0,0,0,.04)}
+.pg:before{content:"";position:absolute;inset:0;z-index:20;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,.04) 4%,transparent 9%)}
+.pg.flipped{transform:rotateY(-180deg);pointer-events:none}
+.pg.turning{filter:brightness(.92)}
+.pg .in{position:absolute;inset:0;font-size:clamp(10px,2.75cqw,14px);line-height:1.5}
+.pg .scroll{overflow-y:auto;scrollbar-width:thin}
+.book-nav{display:flex;align-items:center;gap:16px;margin-top:28px}
+.book-nav button{width:52px;height:52px;border-radius:50%;border:0;background:var(--blue);color:#fff;font-size:1.1rem;box-shadow:0 10px 20px -8px rgba(22,36,110,.6);transition:.25s var(--ease)}
+.book-nav button:hover{transform:scale(1.08)}
+.book-nav button.zoom{background:var(--red)}
+.book-nav button:disabled{opacity:.3;transform:none;cursor:default}
+.book-nav .count{font-family:'Unbounded';font-weight:700;color:var(--blue);min-width:70px;text-align:center}
+.hint{margin-top:10px;color:var(--muted);font-size:.85rem;display:flex;gap:8px;align-items:center}
+.hint i{animation:swipe 1.8s ease-in-out infinite}
+.tags3{display:flex;justify-content:space-between;font-weight:800;color:#b9bdc9;letter-spacing:.12em;font-size:.86em}
+.lines-tex{background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.07) 0 1px,transparent 1px 9px)}
+/* cover */
+.cv .top{position:absolute;left:0;right:0;top:0;height:39%;background:linear-gradient(180deg,#fff,#eef0f4);padding:5cqw 7cqw 0}
+.cv .top .tags3{padding:0 6cqw}
+.cv .parti{display:flex;align-items:center;gap:4cqw;color:var(--blue);font-size:6cqw;margin-top:2cqw;font-family:'Outfit';font-weight:500}
+.cv .parti i,.cv .rk i{flex:1;height:.6cqw;background:var(--red);border-radius:2px}
+.cv .big{display:block;width:100%;height:25cqw;margin-top:1cqw;overflow:visible}.cv .big text{font-family:'Bodoni Moda',serif;font-weight:500;fill:var(--blue);font-size:34px}
+.cv .rk{display:flex;align-items:center;gap:4cqw;color:var(--blue);font-size:6cqw;margin-top:1cqw}
+.cv .bot{position:absolute;left:0;right:0;bottom:0;height:61%;background-color:#394786;color:#fff}
+.cv .flag{position:absolute;left:42%;bottom:0;height:100%;width:auto;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.cv .tagline{position:absolute;right:6cqw;top:5cqw;font-style:italic;font-size:2.3cqw;opacity:.9}
+.cv .logo{position:absolute;left:6cqw;top:8cqw;width:27cqw}
+.cv .txt{position:absolute;left:6cqw;top:20cqw;width:37cqw;font-size:2.15cqw;line-height:1.4}
+.cv .txt b{font-weight:700}
+.cv .pbk{position:absolute;right:4cqw;top:14cqw;writing-mode:vertical-rl;font-size:6.6cqw;line-height:.95;letter-spacing:.02em;font-family:'Outfit';font-weight:300}
+.cv .pbk b{font-weight:800}
+.cv .bar{position:absolute;left:6cqw;bottom:6.5cqw;width:26cqw;background:#fff;padding:1.4cqw 1.6cqw .8cqw;color:#111}
+.cv .bar i{display:block;height:5cqw;background:repeating-linear-gradient(90deg,#111 0 1px,#fff 1px 2px,#111 2px 4px,#fff 4px 5px,#111 5px 6px,#fff 6px 8px,#111 8px 9.5px,#fff 9.5px 10.5px)}
+.cv .bar span{display:block;font-size:1.4cqw;font-weight:800;letter-spacing:.12em;text-align:center;margin-top:.5cqw;white-space:nowrap}
+.cv .pills{position:absolute;right:5cqw;bottom:6cqw;display:grid;gap:1cqw}
+.cv .pills i{display:block;width:16cqw;height:4.2cqw;border-radius:2.2cqw;background:var(--red);border:.4cqw solid #fff}
+.cv .pills i+i{background:#fff}
+.cv .by{position:absolute;left:6cqw;bottom:2.2cqw;font-size:1.9cqw;font-style:italic}
+/* pengantar */
+.pg-p .in{padding:6cqw 7cqw 5cqw;background:#fff}
+.pg-head{display:flex;align-items:flex-end;gap:4cqw;margin-bottom:4cqw}
+.pg-head h3{font-family:'Unbounded';font-weight:900;color:var(--blue);font-size:7.2cqw;line-height:1}
+.pg-head .tg{flex:1;border-bottom:.7cqw solid var(--red);padding-bottom:1cqw;font-size:1.9cqw;font-weight:800;color:#b9bdc9;letter-spacing:.1em;display:flex;justify-content:space-between}
+.pg-p p{text-align:left;margin-bottom:3cqw;color:#1d2240}
+.polar{background:#fbf6e9;padding:1.4cqw;box-shadow:0 1cqw 3cqw rgba(0,0,0,.18)}
+.polar img{width:100%}
+.fl-r{float:right;width:40%;margin:0 0 2cqw 4cqw;transform:rotate(2deg)}
+.fl-l{float:left;width:44%;margin:0 4cqw 2cqw 0;transform:rotate(-2deg)}
+.pg-p .quote{font-style:italic;font-weight:700;text-align:center;color:#1d2240;margin:3cqw 0}
+.pg-p .pres{position:absolute;right:0;bottom:0;width:52%;-webkit-mask:linear-gradient(180deg,transparent,#000 18%),linear-gradient(90deg,transparent,#000 20%);-webkit-mask-composite:source-in;mask:linear-gradient(180deg,transparent,#000 18%);filter:grayscale(1)}
+.pg-p .sig{position:relative;width:50%;text-align:center;margin-top:3cqw;line-height:1.3}
+.pg-p .sig b{display:block;letter-spacing:.04em}
+.pg-p .redline{position:absolute;left:7cqw;bottom:4cqw;width:55%;height:.7cqw;background:var(--red)}
+.pgn{position:absolute;right:5cqw;bottom:3cqw;font-family:'Bodoni Moda',serif;font-size:3cqw;z-index:3}
+/* visi / misi */
+.vm .panel{position:absolute;inset:0;clip-path:polygon(0 0,64% 0,0 82%)}
+.vs .panel{background-color:#2c3f9a}
+.ms .panel{background-color:#c8402f;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.08) 0 1px,transparent 1px 9px),linear-gradient(160deg,#d24a35,#a8311f)}
+.vs .panel{background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.08) 0 1px,transparent 1px 9px),radial-gradient(40cqw 40cqw at 0 45%,rgba(255,255,255,.35),transparent 60%),linear-gradient(160deg,#3550b8,#1e2f86)}
+.vm .word{position:absolute;left:20cqw;bottom:61cqw;font-family:'Unbounded';font-weight:900;font-size:27cqw;color:#fff;transform:rotate(-61deg);transform-origin:0 100%;letter-spacing:.04em;line-height:.78;white-space:nowrap;text-shadow:0 1cqw 4cqw rgba(0,0,0,.15);z-index:1}
+.vm .lg{position:absolute;left:6cqw;top:6cqw;width:28cqw;z-index:2}
+.vm .tg{position:absolute;right:6cqw;top:7cqw;font-size:2cqw;font-weight:800;letter-spacing:.04em;color:#1d2240;z-index:2}
+.vs .ph{position:absolute;right:0;bottom:0;width:68%;-webkit-mask:linear-gradient(180deg,transparent,#000 22%);mask:linear-gradient(180deg,transparent,#000 22%)}
+.vs .txt{position:absolute;right:5cqw;top:33cqw;width:50%;text-align:center;font-style:italic;font-size:3.3cqw;line-height:1.45;color:#1d2240;z-index:2}
+.vs .txt b{font-weight:800}
+.orn{display:flex;align-items:center;justify-content:center;gap:1cqw;margin:2.4cqw auto;width:60%}
+.orn:before,.orn:after{content:"";flex:1;height:.35cqw;background:#222;border-radius:2px}
+.orn i{width:1.4cqw;height:1.4cqw;background:#222;transform:rotate(45deg)}
+.ms .ph{position:absolute;left:3cqw;bottom:0;width:50%;z-index:1;-webkit-mask:linear-gradient(180deg,transparent,#000 10%);mask:linear-gradient(180deg,transparent,#000 10%)}
+.ms .list{position:absolute;right:4cqw;top:20cqw;width:54%;list-style:none;display:grid;gap:2.8cqw;font-size:2.55cqw;line-height:1.4;color:#1d2240;z-index:2}
+.ms .list li{position:relative;padding-left:3.4cqw}
+.ms .list li:before{content:"";position:absolute;left:0;top:1.3cqw;width:1.5cqw;height:1.5cqw;border-radius:50%;background:#1d2240}
+.ms .list li:nth-child(1){margin-left:5cqw}.ms .list li:nth-child(2){margin-left:2cqw}.ms .list li:nth-child(4){margin-left:9cqw}.ms .list li:nth-child(5){margin-left:13cqw}
+/* back */
+.bk .in{background-color:#2c3d93;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.06) 0 1px,transparent 1px 9px),linear-gradient(170deg,#3550b8,#22328a);color:#fff;padding:9cqw 8cqw 6cqw}
+.bk .lgrow{display:flex;align-items:center;gap:4cqw;justify-content:center;margin-bottom:6cqw}
+.bk .lgrow i{flex:1;height:.6cqw;background:var(--red);border-radius:2px;margin-top:3cqw}
+.bk .lgrow img{width:42cqw}
+.bk p{text-align:justify;margin-bottom:2.6cqw;font-size:clamp(9.5px,2.45cqw,13px);opacity:.95}
+.bk .end{font-weight:700}
+.bk .foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:4cqw;gap:4cqw}
+.bk .pbk{font-size:6cqw;line-height:1;font-weight:300;text-align:right}
+.bk .pbk b{display:block;font-weight:800}
+.bk .bar{width:28cqw;background:#fff;padding:1.2cqw 1.4cqw .7cqw;color:#111}
+.bk .bar i{display:block;height:5cqw;background:repeating-linear-gradient(90deg,#111 0 1px,#fff 1px 2px,#111 2px 4px,#fff 4px 5px,#111 5px 6px,#fff 6px 8px)}
+.bk .bar span{display:block;font-size:1.4cqw;font-weight:800;letter-spacing:.2em;text-align:center}
+.bk .tags3{color:rgba(255,255,255,.35);margin-top:4cqw;padding:0 6cqw}
+
+/* ===== MUSIC PLAYER SECTION ===== */
+.lagu{overflow:hidden;padding:10px 0 80px;background:transparent}
+.lagu .stage{margin-top:26px}
+@media(max-width:820px){.staff{height:150px;max-width:360px;margin:0 auto;width:100%}}
+.stage{position:relative;max-width:900px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
+@media(max-width:820px){.stage{grid-template-columns:1fr}}
+.staff{position:relative;height:260px}
+.staff svg{width:100%;height:100%;overflow:visible}
+.staff .n{animation:noteBounce 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.staff .n:nth-of-type(2){animation-delay:.3s}.staff .n:nth-of-type(3){animation-delay:.6s}.staff .n:nth-of-type(4){animation-delay:.9s}
+.player{position:relative;padding-top:66px}
+.pl-logo{position:absolute;top:0;left:10px;width:170px;z-index:3;filter:drop-shadow(0 6px 14px rgba(22,36,110,.35));animation:bob 5s ease-in-out infinite}
+.pl-card{position:relative;background:linear-gradient(140deg,#3d55c4,var(--blue-d));border-radius:24px;padding:22px 22px 18px;color:#fff;box-shadow:0 30px 60px -24px rgba(22,36,110,.65)}
+.pl-top{display:flex;gap:16px;align-items:center}
+.disc{flex:none;width:76px;height:76px;border-radius:18px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:1.8rem;position:relative;overflow:hidden;transition:border-radius .5s}
+.disc .vinyl{position:absolute;inset:4px;border-radius:50%;background:repeating-radial-gradient(circle,#15152a 0 2px,#23233e 2px 4px);opacity:0;transform:scale(.6);transition:.5s var(--ease)}
+.disc .vinyl:after{content:"";position:absolute;inset:32%;border-radius:50%;background:var(--red) url(assets/img/logo-generasi.png) center/88% no-repeat;box-shadow:0 0 0 2px var(--yellow)}
+.playing .disc{border-radius:50%}
+.playing .disc .vinyl{opacity:1;transform:none;animation:spin 4s linear infinite}
+.playing .disc>i{opacity:0}
+.pl-meta{flex:1;min-width:0}
+.pl-meta b{display:block;font-family:'Unbounded';font-size:1.15rem}
+.pl-meta small{opacity:.75}
+.eq{display:inline-flex;gap:3px;align-items:flex-end;height:18px;margin-left:8px;vertical-align:middle}
+.eq i{width:4px;height:30%;background:var(--yellow);border-radius:2px}
+.playing .eq i{animation:eq .9s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:-.2s!important;background:#fff}.eq i:nth-child(3){animation-delay:-.5s!important;background:var(--red)}.eq i:nth-child(4){animation-delay:-.7s!important}
+.seek{margin-top:16px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--yellow) var(--v,0%),rgba(255,255,255,.25) var(--v,0%));outline:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(247,198,0,.4)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border:0;border-radius:50%;background:#fff}
+.times{display:flex;justify-content:space-between;font-size:.8rem;opacity:.8;margin-top:6px;font-variant-numeric:tabular-nums}
+.ctrl{margin-top:14px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:10px 14px;display:flex;align-items:center;gap:12px;backdrop-filter:blur(8px)}
+.ctrl .pp{width:56px;height:56px;border-radius:50%;border:0;background:#fff;color:var(--blue);font-size:1.25rem;display:grid;place-items:center;box-shadow:0 0 0 0 rgba(255,255,255,.6);animation:ring 2s infinite;flex:none}
+.playing .ctrl .pp{animation:none}
+.ctrl .rep{border:0;background:var(--red);color:#fff;border-radius:12px;padding:10px 16px;font-size:1rem;opacity:.5;transition:.2s}
+.ctrl .rep.on{opacity:1}
+.ctrl .vol{display:flex;align-items:center;gap:10px;flex:1;min-width:0}
+.ctrl .vol button{background:none;border:0;color:#fff;font-size:1.05rem;width:28px}
+.pl-err{display:none;margin-top:12px;background:rgba(226,64,47,.25);border:1px solid rgba(255,255,255,.25);padding:8px 12px;border-radius:12px;font-size:.85rem}
+.pl-err.show{display:block}
+.flynotes{position:absolute;inset:0;pointer-events:none;overflow:visible;z-index:4}
+.flynotes span{position:absolute;bottom:40%;font-size:22px;animation:fly 3s ease-out forwards}
+
+/* mini floating player */
+.mini{position:fixed;right:16px;bottom:16px;z-index:150;display:flex;align-items:center;gap:10px;background:linear-gradient(140deg,#3d55c4,var(--blue-d));color:#fff;border-radius:999px;padding:6px 16px 6px 6px;box-shadow:0 16px 36px -10px rgba(22,36,110,.6);transform:translateY(140%);transition:transform .5s var(--ease);border:0}
+.mini.show{transform:none}
+.mini.away{transform:translateY(140%)}
+.mini .md{width:46px;height:46px;border-radius:50%;background:repeating-radial-gradient(circle,#15152a 0 2px,#23233e 2px 4px);position:relative;flex:none}
+.mini .md:after{content:"";position:absolute;inset:30%;border-radius:50%;background:var(--red) url(assets/img/logo-generasi.png) center/88% no-repeat}
+.mini.playing .md{animation:spin 4s linear infinite}
+.mini .mt{text-align:left;line-height:1.15}
+.mini .mt b{display:block;font-size:.85rem}
+.mini .mt small{font-size:.7rem;opacity:.8}
+.mini .mp{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--blue);display:grid;place-items:center;font-size:.85rem}
+.mini:not(.playing):before{content:"";position:absolute;inset:-4px;border-radius:999px;border:2px solid var(--yellow);animation:ring2 1.8s infinite}
+@media(max-width:520px){.mini .mt{display:none}.mini{padding-right:6px}}
+
+/* footer */
+footer{background:var(--navy);color:#fff;padding:56px 0 100px;text-align:center}
+footer img{height:56px;margin:0 auto 18px}
+footer .socials{justify-content:center;margin:0 0 18px}
+footer .socials a.ic{background:rgba(255,255,255,.1);color:#fff}
+footer .socials a.ic:hover{background:var(--red)}
+footer .socials .handle{color:#fff;border-color:rgba(255,255,255,.2)}
+footer small{opacity:.6}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:250;background:rgba(10,14,40,.88);display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:.3s}
+.lb.open{opacity:1;visibility:visible}
+.lb img{max-height:90vh;max-width:100%;width:auto;border-radius:12px;transform:scale(.9);transition:.4s var(--ease)}
+.lb.open img{transform:none}
+.lb{overflow:auto}
+.lb img{cursor:zoom-in}
+.lb.big{place-items:start}
+.lb.big img{max-width:none;max-height:none;width:min(1444px,230vw);cursor:zoom-out;border-radius:0}
+.lb .lb-hint{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:#fff;color:var(--blue);font-weight:700;font-size:.85rem;padding:8px 14px;border-radius:999px;pointer-events:none}
+.lb.big .lb-hint{display:none}
+.lb button{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--blue);font-size:1.2rem}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,30px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:14px;z-index:260;opacity:0;transition:.4s var(--ease);max-width:calc(100% - 32px);font-size:.9rem}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* reveal */
+.rv{opacity:0;transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.up{transform:translateY(40px)}.rv.left{transform:translateX(-50px)}.rv.right{transform:translateX(50px)}.rv.zoom{transform:scale(.88)}
+.rv.in{opacity:1;transform:none}
+
+/* keyframes */
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}70%{box-shadow:0 0 0 16px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+@keyframes ring2{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(1.18)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}100%{transform:translate(40px,-30px) scale(1.1)}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes grad{to{background-position:200% 0}}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.15)}100%{transform:scale(1)}}
+@keyframes eq{0%,100%{height:25%}50%{height:100%}}
+@keyframes fly{0%{opacity:0;transform:translate(0,0) rotate(0) scale(.6)}15%{opacity:1}100%{opacity:0;transform:translate(var(--x,40px),-180px) rotate(var(--r,20deg)) scale(1.2)}}
+@keyframes floatNote{0%{opacity:0;transform:translateY(0) rotate(0)}20%{opacity:.8}100%{opacity:0;transform:translateY(-60vh) rotate(30deg)}}
+@keyframes noteBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pop{0%{opacity:0;transform:scale(.85)}100%{opacity:1;transform:none}}
+@keyframes swipe{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}h1.title .ch{opacity:1;transform:none}}
+</style>
+</head>
+<body class="locked">
+<div id="prog"></div>
+
+<!-- ============ SPLASH ============ -->
+<div id="splash" role="dialog" aria-label="Selamat datang">
+  <div class="lines"></div>
+  <div class="sp-notes" aria-hidden="true"></div>
+  <div class="sp-in">
+    <img class="sp-logo" src="assets/img/logo-generasi.png" alt="GENERASI · Parti Generasi Rakyat">
+    <div class="sp-disc" aria-hidden="true"></div>
+    <h2>Selamat Datang, Generasi!</h2>
+    <p>Masuk sambil dengar lagu rasmi <b>“Kita GENERASI”</b> ♪</p>
+    <button class="sp-play" id="enterMusic"><i class="fa-solid fa-play"></i> Masuk &amp; Dengar Lagu</button>
+    <button class="sp-skip" id="enterQuiet">Masuk tanpa lagu</button>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#utama" class="brand"><img src="assets/img/logo-generasi.png" alt="GENERASI"></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <ul class="menu" id="menu">
+      <li><a href="#utama" class="active">Utama</a></li>
+      <li><a href="#daftar">Daftar</a></li>
+      <li><a href="#pbmy">Aplikasi PBMy &amp; MyDigital ID</a></li>
+      <li><a href="#whatsapp" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="#tentang">Tentang Kami</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="utama">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap">
+    <div class="hero-txt">
+      <h1 class="title" aria-label="Bersama GENERASI"><span class="w w1" data-split="BERSAMA"></span><span class="w w2" data-split="GENERASI" data-red="4"></span></h1>
+      <p class="lead rv up" style="--d:.5s">So, jangan lupa, <b>1 November</b> nanti, <b>UNDI GENERASI</b>. Demi belia yang progresif, inklusif &amp; sejahtera.</p>
+      <div class="hero-cta rv up" style="--d:.65s">
+        <a class="btn red" href="#daftar"><i class="fa-solid fa-user-plus"></i> Daftar Ahli</a>
+      </div>
+      <div class="socials rv up" style="--d:.8s" data-social></div>
+    </div>
+
+    <div class="cd-card rv zoom" style="--d:.2s">
+      <div class="cd-head"><span class="cd-label"><span class="live"></span> COUNTDOWN</span><img src="assets/img/logo-generasi.png" alt="GENERASI"></div>
+      <div class="cd-row red" data-cd="closeDate" data-done="Pendaftaran telah ditutup">
+        <div class="cd-title"><strong>TUTUP DAFTAR</strong><small data-when>26 Okt 2026 · 11:59 malam</small></div>
+        <div class="units"><div><b data-u="d">--</b><span>Hari</span></div><div><b data-u="h">--</b><span>Jam</span></div><div><b data-u="m">--</b><span>Minit</span></div><div><b data-u="s">--</b><span>Saat</span></div></div>
+      </div>
+      <div class="cd-row" data-cd="voteDate" data-end="voteEnd" data-live-title="UNDIAN DIBUKA · BERBAKI" data-live-when="Ditutup 2 Nov 2026 · 9:00 pagi" data-done="Pengundian telah tamat">
+        <div class="cd-title"><strong data-head>HARI MENGUNDI</strong><small data-when>1 Nov 2026 · 9:00 pagi (24 jam)</small></div>
+        <div class="units"><div><b data-u="d">--</b><span>Hari</span></div><div><b data-u="h">--</b><span>Jam</span></div><div><b data-u="m">--</b><span>Minit</span></div><div><b data-u="s">--</b><span>Saat</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lagu" id="lagu">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv up">Lagu Rasmi</div>
+      <h2 class="h2 rv up" style="--d:.1s">Dengar <span class="r">“Kita GENERASI”</span></h2>
+      <p class="sub rv up" style="--d:.2s">Tekan <b>▶ main</b> dan biarkan lagu menemani anda sepanjang melayari laman ini.</p>
+    </div>
+    <div class="stage" id="stage">
+      <div class="staff rv left" aria-hidden="true">
+        <svg viewBox="0 0 360 240" fill="none">
+          <g stroke="#24369a" stroke-width="2" opacity=".85">
+            <path d="M10 70 C 90 30, 200 120, 350 60"/><path d="M10 88 C 90 48, 200 138, 350 78"/><path d="M10 106 C 90 66, 200 156, 350 96"/><path d="M10 124 C 90 84, 200 174, 350 114"/><path d="M10 142 C 90 102, 200 192, 350 132"/>
+          </g>
+          <g fill="#121733">
+            <g class="n"><ellipse cx="70" cy="104" rx="11" ry="8" transform="rotate(-20 70 104)"/><rect x="79" y="46" width="3" height="58"/></g>
+            <g class="n"><ellipse cx="140" cy="122" rx="11" ry="8" transform="rotate(-20 140 122)"/><ellipse cx="190" cy="132" rx="11" ry="8" transform="rotate(-20 190 132)"/><rect x="149" y="62" width="3" height="60"/><rect x="199" y="72" width="3" height="60"/><path d="M149 62 L202 72 L202 82 L149 72Z" fill="#e2402f"/></g>
+            <g class="n"><ellipse cx="260" cy="110" rx="11" ry="8" transform="rotate(-20 260 110)" fill="#e2402f"/><rect x="269" y="50" width="3" height="60" fill="#e2402f"/><path d="M272 50 q 18 10 10 34 q 2 -18 -10 -22z" fill="#e2402f"/></g>
+            <g class="n"><ellipse cx="320" cy="80" rx="11" ry="8" transform="rotate(-20 320 80)" fill="#24369a"/><rect x="329" y="22" width="3" height="58" fill="#24369a"/></g>
+          </g>
+          <text x="20" y="120" font-size="64" fill="#24369a" font-family="serif">𝄞</text>
+        </svg>
+      </div>
+      <div class="player rv right" id="player">
+        <img class="pl-logo" src="assets/img/logo-generasi.png" alt="GENERASI">
+        <div class="flynotes" id="flynotes"></div>
+        <div class="pl-card">
+          <div class="pl-top">
+            <div class="disc"><i class="fa-solid fa-music"></i><span class="vinyl"></span></div>
+            <div class="pl-meta"><b>Kita GENERASI <span class="eq"><i></i><i></i><i></i><i></i></span></b><small>GENERASI Terengganu · Lagu Rasmi</small></div>
+          </div>
+          <div class="seek"><input type="range" id="seek" min="0" max="100" step="0.1" value="0" aria-label="Kedudukan lagu"></div>
+          <div class="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+          <div class="ctrl">
+            <button class="pp" id="pp" aria-label="Main / jeda"><i class="fa-solid fa-play"></i></button>
+            <button class="rep on" id="rep" aria-label="Ulang lagu" title="Ulang"><i class="fa-solid fa-repeat"></i></button>
+            <div class="vol"><button id="mute" aria-label="Senyap"><i class="fa-solid fa-volume-high"></i></button><input type="range" id="vol" min="0" max="1" step="0.01" value="0.8" aria-label="Kelantangan"></div>
+          </div>
+          <div class="pl-err" id="plErr"><i class="fa-solid fa-triangle-exclamation"></i> Fail lagu belum ditemui. Letak fail MP3 di <b>assets/audio/kita-generasi.mp3</b>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>PROGRESIF <i class="fa-solid fa-star"></i> INKLUSIF <i class="fa-solid fa-star"></i> SEJAHTERA <i class="fa-solid fa-star"></i> #KitaGENERASI <i class="fa-solid fa-star"></i> UNDI GENERASI 1 NOVEMBER <i class="fa-solid fa-star"></i></span>
+  <span>PROGRESIF <i class="fa-solid fa-star"></i> INKLUSIF <i class="fa-solid fa-star"></i> SEJAHTERA <i class="fa-solid fa-star"></i> #KitaGENERASI <i class="fa-solid fa-star"></i> UNDI GENERASI 1 NOVEMBER <i class="fa-solid fa-star"></i></span>
+</div></div>
+
+<!-- ============ TAKWIM ============ -->
+<section class="takwim" id="takwim">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv up">Tarikh Penting</div>
+      <h2 class="h2 rv up" style="--d:.1s">Takwim Parlimen Belia <span class="r">Malaysia 2026</span></h2>
+      <p class="sub rv up" style="--d:.2s">Yakin bersuara, berubah. Ikuti setiap fasa sehingga keputusan rasmi.</p>
+    </div>
+    <div class="tl" id="tl">
+      <div class="tl-line"><i></i></div>
+      <div class="tl-item rv left"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>1</b><i class="fa-regular fa-calendar-check"></i></div><div><h3>5 Jun</h3><p>Tarikh akhir penubuhan parti</p></div></div></div>
+      <div class="tl-item rv right"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>2</b><i class="fa-solid fa-file-signature"></i></div><div><h3>1 Oktober</h3><p>Penyerahan calon &amp; manifesto</p></div></div></div>
+      <div class="tl-item rv left"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>3</b><i class="fa-solid fa-bullhorn"></i></div><div><h3>15 Oktober</h3><p>Pengumuman penamaan calon</p></div></div></div>
+      <div class="tl-item rv right"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>4</b><i class="fa-solid fa-people-group"></i></div><div><h3>15 – 31 Oktober</h3><p>Tempoh berkempen</p></div></div></div>
+      <div class="tl-item hot rv left"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>5</b><i class="fa-solid fa-clipboard-check"></i></div><div><h3>26 Oktober</h3><p>Penutupan daftar pemilih &amp; pengundi</p><span class="tl-chip">JANGAN TERLEPAS</span></div></div></div>
+      <div class="tl-item hot rv right"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>6</b><i class="fa-solid fa-check-to-slot"></i></div><div><h3>1 – 2 November</h3><p>Hari pilihan raya PBMy</p><span class="tl-chip">UNDI GENERASI</span></div></div></div>
+      <div class="tl-item rv left"><span class="tl-dot"></span><div class="tl-card"><div class="tl-ic"><b>7</b><i class="fa-solid fa-chart-column"></i></div><div><h3>2 November</h3><p>Keputusan rasmi</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAFTAR ============ -->
+<section class="daftar" id="daftar">
+  <div class="wrap">
+    <div class="d-side rv left">
+      <div class="eyebrow">Borang Ahli</div>
+      <div class="hash">#KitaGENERASI</div>
+      <p><b>GENERASI Masa Depan Negara.</b> Kita mungkin berbeza pandangan, tetapi kita berkongsi harapan. Mari bina masa depan belia bersama GENERASI!</p>
+      <ul class="checks">
+        <li><i class="fa-solid fa-1"></i><span>Isi borang pendaftaran ahli di sebelah.</span></li>
+        <li><i class="fa-solid fa-2"></i><span>Muat turun <b>MyDigital ID</b> &amp; <b>ePBMy</b>, pilih <b>Parti Belia GENERASI Rakyat</b>.</span></li>
+        <li><i class="fa-brands fa-whatsapp"></i><span>Sertai grup WhatsApp rasmi untuk makluman terkini.</span></li>
+      </ul>
+    </div>
+    <div class="jf-card rv right">
+      <div class="jf-wrap" id="jfWrap">
+        <iframe id="jfFrame" title="Borang Pendaftaran GENERASI" scrolling="no"></iframe>
+        <div class="jf-cover" id="jfCover"><i class="fa-solid fa-lock"></i> Maklumat anda selamat bersama GENERASI</div>
+        <div class="jf-loading" id="jfLoad"><div><div class="spinner"></div>Memuatkan borang…</div></div>
+      </div>
+      <a class="jf-open" id="jfOpen" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Borang tak muncul? Tekan di sini untuk buka borang</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PBMy & MyDigital ID ============ -->
+<section class="pbmy" id="pbmy">
+  <div class="lines"></div>
+  <div class="wrap" style="position:relative">
+    <div class="eyebrow rv up">Aplikasi PBMy &amp; MyDigital ID</div>
+    <h2 class="h2 rv up" style="--d:.1s">Muat Turun MyDigital ID &amp; ePBMy</h2>
+    <p class="sub rv up" style="--d:.2s">Dua aplikasi ini diperlukan untuk log masuk dan mengundi dalam Parlimen Belia Malaysia.</p>
+
+    <div class="info-grid">
+      <div class="info rv up"><i class="fa-solid fa-bolt"></i><p>MyDigital ID digunakan dalam sistem ePBMy bagi memudahkan proses log masuk yang lebih pantas, selamat dan efisien.</p></div>
+      <div class="info rv up" style="--d:.1s"><i class="fa-solid fa-fingerprint"></i><p>MyDigital ID juga digunakan semasa proses pengundian. Setelah anda memilih parti pilihan, anda perlu membuat e-Verification melalui MyDigital ID untuk mengesahkan identiti dan mengesahkan penghantaran undi anda.</p></div>
+      <div class="info rv up" style="--d:.15s;grid-column:1/-1"><i class="fa-solid fa-mobile-screen"></i><p>Bagi menggunakan fungsi ini, pengguna perlu mempunyai aplikasi <b>ePBMy</b> dan aplikasi <b>MyDigital ID</b> pada peranti masing-masing.</p></div>
+      <div class="uses rv zoom" style="--d:.2s">
+        <h3>MyDigital ID digunakan untuk:</h3>
+        <div><b>1</b>Log masuk ke ePBMy dengan lebih pantas dan selamat.</div>
+        <div><b>2</b>e-Verification untuk mengesahkan penghantaran undi semasa pilihan raya.</div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step rv left">
+        <span class="no">01</span>
+        <h3>Muat Turun MyDigital ID</h3>
+        <div class="flow"><span>Muat turun</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Ikuti langkah-langkah</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Daftar identiti digital</span></div>
+        <div class="stores">
+          <a class="store play" data-link="mydigitalPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>MUAT TURUN DI</small><b>Google Play</b></span></a>
+          <a class="store" data-link="mydigitalApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>MUAT TURUN DI</small><b>App Store</b></span></a>
+        </div>
+      </div>
+      <div class="step rv right">
+        <span class="no">02</span>
+        <h3>Muat Turun ePBMy</h3>
+        <div class="flow"><span>Sign-in dengan MyDigital ID</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Isi maklumat</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Sahkan perakuan</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Senarai parti</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Pilih Parti Belia GENERASI Rakyat</span></div>
+        <div class="party"><i class="fa-solid fa-flag"></i><div><small>Nama parti untuk dipilih</small><b>Parti Belia GENERASI Rakyat</b><small>Pengasas</small><b>MUHAMMAD HAIKAL BIN MOHAMMAD HATTA</b></div></div>
+        <div class="stores">
+          <a class="store play" data-link="epbmyPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>MUAT TURUN DI</small><b>Google Play</b></span></a>
+          <a class="store" data-link="epbmyApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>MUAT TURUN DI</small><b>App Store</b></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="next-row rv up"><span>SELESAI?</span><a class="btn red" href="#whatsapp">Seterusnya <i class="fa-solid fa-arrow-down"></i></a></div>
+  </div>
+</section>
+
+<!-- ============ WHATSAPP ============ -->
+<section id="whatsapp">
+  <div class="wrap">
+    <div class="wa-card rv zoom">
+      <span class="bubble" style="width:220px;height:220px;left:-60px;top:-60px"></span>
+      <span class="bubble" style="width:140px;height:140px;right:-30px;bottom:-30px;animation-delay:-4s"></span>
+      <div class="wa-ic"><i class="fa-brands fa-whatsapp"></i></div>
+      <h2>Sertai Grup WhatsApp Rasmi</h2>
+      <p>Parti Belia GENERASI Rakyat Terengganu. Dapatkan makluman terkini, dan jangan lupa: 1 November nanti, <b>UNDI GENERASI</b>!</p>
+      <a class="wa-btn" data-link="whatsappGroup" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Join Grup WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TENTANG KAMI ============ -->
+<section class="tentang" id="tentang">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv up">Tentang Kami</div>
+      <h2 class="h2 rv up" style="--d:.1s">Kenali <span class="r">GENERASI</span></h2>
+    </div>
+
+    <!-- Perutusan Penaung -->
+    <div class="penaung">
+      <div class="pn-photo rv left">
+        <span class="pn-ring"></span><span class="pn-dot"></span>
+        <div class="arch"><img src="assets/img/penaung-johari.jpg" alt="YB Tan Sri Dato’ Dr. Johari bin Abdul" loading="lazy"></div>
+        <div class="pn-name">
+          <b>YB Tan Sri Dato’ Dr. Johari bin Abdul</b>
+          <span>Yang di-Pertua Dewan Rakyat</span>
+          <span class="tag">PENAUNG PBMy</span>
+        </div>
+      </div>
+      <div class="pn-text rv right">
+        <div class="eyebrow">Perutusan Penaung</div>
+        <h3 class="h2" style="font-size:clamp(1.5rem,3.4vw,2.2rem)">Parlimen Belia Malaysia</h3>
+        <div class="salam"><em>Bismillahirrahmanirrahim.</em>Assalamualaikum Warahmatullahi Wabarakatuh dan Salam Sejahtera.</div>
+        <div class="pn-body clamp" id="pnBody">
+          <p>Terlebih dahulu, syabas dan tahniah saya ucapkan kepada seluruh warga Parlimen Belia Malaysia (PBMy) serta sidang redaksi di sebalik pembangunan portal rasmi ini.</p>
+          <p>Parlimen Belia bukan sekadar sebuah platform simulasi atau latihan teknikal semata-mata, ia adalah wadah kritikal yang membentuk DNA kepimpinan masa hadapan negara. Di bawah bumbung Parlimen Malaysia, kita sentiasa membuka ruang seluas-luasnya bagi memastikan suara anak muda bukan sekadar didengari, malah dibahas dan diperhitungkan. Saya amat percaya bahawa dinamisme pemikiran belia adalah nadi utama kepada kemajuan demokrasi kita.</p>
+          <p>Melalui portal ini, setiap input, usul, dan idea daripada perwakilan PBMy kini boleh diakses secara telus oleh seluruh masyarakat. Ini adalah langkah proaktif dalam memperkasakan literasi politik serta mematangkan budaya perdebatan yang berintegriti di kalangan generasi muda. Kita mahukan perdebatan yang berpaksikan fakta, bukannya retorika.</p>
+          <div class="pull">Ingatlah, anda bukan sekadar ‘pemimpin hari esok’, tetapi merupakan rakan strategik dalam membangunkan masa depan Malaysia hari ini.</div>
+          <p>Teruskan berbakti dengan penuh integriti, berhujah dengan ilmu, dan sentiasa membaja semangat kecintaan kepada watan.</p>
+          <p>Ayuh, jadikan platform ini sebagai batu loncatan untuk membina Malaysia yang lebih inklusif dan progresif.</p>
+          <p>Sekian, terima kasih.</p>
+          <div class="sign"><b>YB Tan Sri Dato’ Dr. Johari bin Abdul</b><span>Yang di-Pertua Dewan Rakyat · Penaung PBMy</span></div>
+        </div>
+        <button class="btn ghost more" id="pnMore"><i class="fa-solid fa-angles-down"></i> <span>Baca Selanjutnya</span></button>
+      </div>
+    </div>
+
+    <!-- Profile Book -->
+    <div class="pb-section" id="profil">
+      <div class="rv left">
+        <div class="eyebrow">Profile Book</div>
+        <h3 class="h2" style="font-size:clamp(1.6rem,3.6vw,2.4rem)">Parti <span class="r">GENERASI</span> Rakyat</h3>
+        <p class="sub">Selak buku profil kami: kata pengantar daripada Presiden, visi dan misi perjuangan GENERASI.</p>
+        <div class="chapters" id="chapters"></div>
+      </div>
+      <div class="book-stage rv zoom">
+        <div class="book" id="book" tabindex="0" aria-label="Buku profil GENERASI. Guna anak panah untuk selak.">
+
+          <div class="pg pimg" data-title="Muka Depan"><img src="assets/img/profil-1-muka-depan.jpg" alt="Profile Book GENERASI: Muka Depan"></div>
+          <div class="pg pimg" data-title="Kata Pengantar"><img src="assets/img/profil-2-kata-pengantar.jpg" alt="Profile Book GENERASI: Kata Pengantar"></div>
+          <div class="pg pimg" data-title="Visi"><img src="assets/img/profil-3-visi.jpg" alt="Profile Book GENERASI: Visi"></div>
+          <div class="pg pimg" data-title="Misi"><img src="assets/img/profil-4-misi.jpg" alt="Profile Book GENERASI: Misi"></div>
+          <div class="pg pimg" data-title="Muka Belakang"><img src="assets/img/profil-5-muka-belakang.jpg" alt="Profile Book GENERASI: Muka Belakang" loading="lazy"></div>
+        </div>
+        <div class="book-nav">
+          <button id="bPrev" aria-label="Halaman sebelum"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="count" id="bCount">1 / 5</span>
+          <button id="bNext" aria-label="Halaman seterusnya"><i class="fa-solid fa-chevron-right"></i></button>
+          <button id="bZoom" class="zoom" aria-label="Besarkan halaman"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+        </div>
+        <div class="hint"><i class="fa-solid fa-hand-pointer"></i> Tekan / leret untuk selak · <i class="fa-solid fa-magnifying-glass-plus"></i> untuk besarkan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAGU ============ -->
+</main>
+
+<footer>
+  <img src="assets/img/logo-generasi.png" alt="GENERASI">
+  <div class="socials" data-social></div>
+  <small>© 2026 GENERASI Terengganu · Parti Belia GENERASI Rakyat · Progresif | Inklusif | Sejahtera</small>
+</footer>
+
+<button class="mini" id="mini" aria-label="Main / jeda lagu Kita GENERASI">
+  <span class="md"></span>
+  <span class="mt"><b>Kita GENERASI</b><small id="miniTxt">Tekan untuk dengar</small></span>
+  <span class="mp"><i class="fa-solid fa-play"></i></span>
+</button>
+
+<div class="lb" id="lb"><button id="lbClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button><img alt=""><span class="lb-hint">Tekan gambar untuk zoom</span></div>
+<div class="toast" id="toast"></div>
+<audio id="song" loop preload="auto"></audio>
+
+<script>
+/* ====== TETAPAN – UBAH DI SINI ====== */
+const CONFIG = {
+  jotformId: "262866598775078",
+  jotformCover: 96,          // tinggi (px) jalur putih yang menutup watermark Jotform di bawah borang. Laraskan jika perlu.
+  whatsappGroup: "https://chat.whatsapp.com/G9utnVy4n0hDxa1QyajZ2T",
+  mydigitalPlay: "https://play.google.com/store/apps/details?id=my.mimos.signetclient",
+  mydigitalApple: "https://apps.apple.com/my/app/mydigital-id/id1435289143",
+  epbmyPlay: "https://play.google.com/store/apps/details?id=my.gov.parlimen.epbmy",
+  epbmyApple: "https://apps.apple.com/my/app/epbmy/id6774537768",
+  instagram: "https://www.instagram.com/generasirakyat.terengganu",
+  tiktok: "https://www.tiktok.com/@generasirakyatterengganu",
+  threads: "https://www.threads.com/@generasirakyat.terengganu",
+  facebook: "https://www.facebook.com/share/1CGj1yxkg1/",
+  handle: "@generasirakyat.terengganu",
+  closeDate: "2026-10-26T23:59:59+08:00",   // Tutup daftar: 26 Okt 2026, 11:59:59 malam (waktu Malaysia)
+  voteDate:  "2026-11-01T09:00:00+08:00",   // Mula mengundi: 1 Nov 2026, 9:00 pagi
+  voteEnd:   "2026-11-02T09:00:00+08:00",   // Tamat mengundi: 24 jam kemudian
+  songUrl:   "assets/audio/kita-generasi.mp3"     // lokasi fail lagu
+};
+/* ==================================== */
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* pautan */
+$$('[data-link]').forEach(a=>a.href=CONFIG[a.dataset.link]||'#');
+
+/* sosmed */
+const soc=[['instagram','fa-instagram','Instagram'],['tiktok','fa-tiktok','TikTok'],['threads','fa-threads','Threads'],['facebook','fa-facebook-f','Facebook']];
+$$('[data-social]').forEach(box=>{
+  box.innerHTML=soc.map(([k,ic,n])=>`<a class="ic" href="${CONFIG[k]}" target="_blank" rel="noopener" aria-label="${n}" title="${n}"><i class="fa-brands ${ic}"></i></a>`).join('')+
+  `<a class="handle" href="${CONFIG.instagram}" target="_blank" rel="noopener" style="text-decoration:none">${CONFIG.handle}</a>`;
+});
+
+/* tajuk huruf */
+let delay=0.15;
+$$('[data-split]').forEach(el=>{
+  const red=(el.dataset.red||'').split(',').filter(Boolean).map(Number);
+  el.innerHTML=[...el.dataset.split].map((c,i)=>{delay+=0.05;return `<span class="ch${red.includes(i)?' red':''}" style="animation-delay:${delay.toFixed(2)}s">${c}</span>`}).join('');
+});
+
+/* countdown */
+const pad=n=>String(n).padStart(2,'0');
+function tick(){
+  const now=Date.now();
+  $$('[data-cd]').forEach(row=>{
+    let diff=new Date(CONFIG[row.dataset.cd]).getTime()-now;
+    const put=(u,v)=>{const el=row.querySelector('[data-u="'+u+'"]');const t=pad(v);if(el.textContent!==t){el.textContent=t;if(u!=='s'){el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump')}}};
+    if(diff<=0&&row.dataset.end){
+      const left=new Date(CONFIG[row.dataset.end]).getTime()-now;
+      if(left>0){diff=left;row.classList.add('live');row.querySelector('[data-head]').textContent=row.dataset.liveTitle;row.querySelector('[data-when]').textContent=row.dataset.liveWhen}
+    }
+    if(diff<=0){['d','h','m','s'].forEach(u=>put(u,0));row.classList.remove('live');row.classList.add('done');row.querySelector('[data-when]').textContent=row.dataset.done;return}
+    const d=Math.floor(diff/864e5);diff-=d*864e5;
+    const h=Math.floor(diff/36e5);diff-=h*36e5;
+    const m=Math.floor(diff/6e4);diff-=m*6e4;
+    put('d',d);put('h',h);put('m',m);put('s',Math.floor(diff/1e3));
+  });
+}
+tick(); setInterval(tick,1000);
+
+/* nav */
+const nav=$('#nav'), menu=$('#menu'), burger=$('#burger');
+burger.onclick=()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
+$$('#menu a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+const navSecs=['utama','daftar','pbmy','whatsapp','tentang'].map(id=>document.getElementById(id));
+const tl=$('#tl'), tlLine=$('.tl-line i');
+function onScroll(){
+  const y=scrollY, H=document.documentElement.scrollHeight-innerHeight;
+  $('#prog').style.width=(H>0?y/H*100:0)+'%';
+  nav.classList.toggle('scrolled',y>10);
+  if(window.__entered) mini.classList.toggle('show',y>260||!song.paused);
+  let cur='utama'; navSecs.forEach(s=>{if(s.getBoundingClientRect().top<160)cur=s.id});
+  $$('#menu a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+  const r=tl.getBoundingClientRect(); const p=Math.min(1,Math.max(0,(innerHeight*0.7-r.top)/r.height));
+  tlLine.style.setProperty('--p',p);
+}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+$$('.rv').forEach(el=>io.observe(el));
+
+/* lightbox */
+const lb=$('#lb');
+function openLB(src,alt){const im=lb.querySelector('img');im.src=src;im.alt=alt||'';lb.classList.remove('big');lb.classList.add('open')}
+lb.querySelector('img').addEventListener('click',e=>{e.stopPropagation();lb.classList.toggle('big')});
+$('#lbClose').addEventListener('click',e=>{e.stopPropagation();lb.classList.remove('open')});
+lb.onclick=e=>{if(e.target!==lb.querySelector('img'))lb.classList.remove('open')};
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+
+/* toast */
+let tt; function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),3800)}
+
+/* ===== JOTFORM ===== */
+const jf=$('#jfFrame'), cover=$('#jfCover');
+cover.style.height=CONFIG.jotformCover+'px';
+jf.src='https://form.jotform.com/'+CONFIG.jotformId;
+$('#jfOpen').href='https://form.jotform.com/'+CONFIG.jotformId;
+jf.addEventListener('load',()=>$('#jfLoad').classList.add('done'));
+addEventListener('message',e=>{
+  if(!/jotform\.(com|co|net|us|pro)|jotfor\.ms/.test(e.origin||'')) return;
+  if(typeof e.data!=='string') return;
+  const a=e.data.split(':');
+  if(a[0]==='setHeight'){const h=parseInt(a[1],10); if(h>100) jf.style.height=h+'px'}
+  else if(a[0]==='scrollIntoView'){jf.scrollIntoView({behavior:'smooth',block:'start'})}
+  else if(a[0]==='collapseErrorPage' && jf.clientHeight>innerHeight){jf.style.height=innerHeight+'px'}
+});
+
+/* ===== PENAUNG baca lagi ===== */
+const pnB=$('#pnBody'), pnM=$('#pnMore');
+pnM.onclick=()=>{
+  const c=pnB.classList.toggle('clamp');
+  pnM.querySelector('span').textContent=c?'Baca Selanjutnya':'Tutup';
+  pnM.querySelector('i').className='fa-solid '+(c?'fa-angles-down':'fa-angles-up');
+  if(c) pnB.closest('.penaung').scrollIntoView({behavior:'smooth'});
+};
+
+/* ===== FLIPBOOK ===== */
+const pages=$$('#book .pg'), N=pages.length, chap=$('#chapters');
+let idx=0;
+pages.forEach((p,i)=>{p.style.zIndex=N-i});
+chap.innerHTML=pages.map((p,i)=>`<button data-i="${i}"><span>${i+1}</span>${p.dataset.title}</button>`).join('');
+function go(n){
+  n=Math.max(0,Math.min(N-1,n)); if(n===idx)return;
+  const step=n>idx?1:-1;
+  const run=()=>{
+    if(idx===n){render();return}
+    if(step>0){const p=pages[idx];p.classList.add('turning');p.classList.add('flipped');setTimeout(()=>p.classList.remove('turning'),1000);idx++}
+    else{idx--;const p=pages[idx];p.classList.remove('flipped')}
+    render(); if(idx!==n) setTimeout(run,180);
+  };
+  run();
+}
+function render(){
+  $('#bCount').textContent=(idx+1)+' / '+N;
+  $('#bPrev').disabled=idx===0; $('#bNext').disabled=idx===N-1;
+  $$('#chapters button').forEach((b,i)=>b.classList.toggle('on',i===idx));
+}
+render();
+$('#bPrev').onclick=()=>go(idx-1); $('#bNext').onclick=()=>go(idx+1);
+$('#bZoom').onclick=()=>{const im=pages[idx].querySelector('img');openLB(im.currentSrc||im.src,im.alt)};
+chap.onclick=e=>{const b=e.target.closest('button');if(b)go(+b.dataset.i)};
+const book=$('#book');
+book.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(idx+1);if(e.key==='ArrowLeft')go(idx-1)});
+let sx=null,sy=null,moved=false;
+book.addEventListener('pointerdown',e=>{sx=e.clientX;sy=e.clientY;moved=false});
+book.addEventListener('pointerup',e=>{
+  if(sx===null)return; const dx=e.clientX-sx, dy=e.clientY-sy;
+  if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)) go(idx+(dx<0?1:-1));
+  else if(Math.abs(dx)<8&&Math.abs(dy)<8){const r=book.getBoundingClientRect(); go(idx+((e.clientX-r.left)>r.width*0.45?1:-1))}
+  sx=null;
+});
+
+/* ===== MUZIK ===== */
+const song=$('#song'); if(CONFIG.songUrl)song.src=CONFIG.songUrl;
+const player=$('#player'), mini=$('#mini'), seek=$('#seek'), vol=$('#vol');
+song.volume=0.8;
+let songOk=true;
+const fmt=t=>isFinite(t)?Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0'):'0:00';
+function setUI(){
+  const on=!song.paused;
+  player.classList.toggle('playing',on); mini.classList.toggle('playing',on); document.body.classList.toggle('song-on',on);
+  $('#pp i').className='fa-solid '+(on?'fa-pause':'fa-play');
+  mini.querySelector('.mp i').className='fa-solid '+(on?'fa-pause':'fa-play');
+  $('#miniTxt').textContent=on?'Sedang dimainkan ♪':'Tekan untuk dengar';
+  $$('[data-song-label]').forEach(s=>s.textContent=on?'Jeda Lagu':'Main Lagu');
+  $$('[data-song-label2]').forEach(s=>s.textContent=on?'Sedang dimainkan ♪':'Tekan untuk dengar ♪');
+}
+function play(){
+  return song.play().then(setUI).catch(err=>{
+    if(!songOk||song.error){$('#plErr').classList.add('show');toast('Fail lagu belum ditambah: assets/audio/kita-generasi.mp3')}
+    setUI();
+  });
+}
+function toggle(){song.paused?play():(song.pause(),setUI())}
+song.addEventListener('error',()=>{songOk=false;$('#plErr').classList.add('show');setUI()});
+song.addEventListener('play',setUI); song.addEventListener('pause',setUI);
+const setDur=()=>$('#dur').textContent=fmt(song.duration);
+song.addEventListener('loadedmetadata',setDur); song.addEventListener('durationchange',setDur); if(song.readyState>0)setDur();
+song.addEventListener('timeupdate',()=>{
+  if(!song.duration)return; const v=song.currentTime/song.duration*100;
+  if(!seek.matches(':active')){seek.value=v;seek.style.setProperty('--v',v+'%')}
+  $('#cur').textContent=fmt(song.currentTime); if($('#dur').textContent==='0:00')setDur();
+});
+seek.addEventListener('input',()=>{seek.style.setProperty('--v',seek.value+'%');if(song.duration)song.currentTime=seek.value/100*song.duration});
+vol.style.setProperty('--v','80%');
+vol.addEventListener('input',()=>{song.volume=+vol.value;song.muted=false;vol.style.setProperty('--v',vol.value*100+'%');muteIc()});
+function muteIc(){$('#mute i').className='fa-solid '+(song.muted||song.volume==0?'fa-volume-xmark':song.volume<.5?'fa-volume-low':'fa-volume-high')}
+$('#mute').onclick=()=>{song.muted=!song.muted;muteIc()};
+$('#rep').onclick=function(){song.loop=!song.loop;this.classList.toggle('on',song.loop);toast(song.loop?'Ulang lagu: HIDUP':'Ulang lagu: MATI')};
+$('#pp').onclick=toggle; mini.onclick=toggle;
+$$('[data-toggle-song]').forEach(b=>b.onclick=toggle);
+
+/* not muzik terbang */
+const fly=$('#flynotes'), glyphs=['♪','♫','♬','♩'], cols=['#24369a','#e2402f','#f7c600','#3149b8'];
+setInterval(()=>{
+  if(song.paused||reduce||document.hidden)return;
+  const s=document.createElement('span');
+  s.textContent=glyphs[Math.random()*4|0];
+  s.style.left=(15+Math.random()*70)+'%'; s.style.color=cols[Math.random()*4|0];
+  s.style.setProperty('--x',(Math.random()*120-60)+'px'); s.style.setProperty('--r',(Math.random()*60-30)+'deg');
+  s.style.fontSize=(18+Math.random()*16)+'px';
+  fly.appendChild(s); setTimeout(()=>s.remove(),3000);
+},450);
+
+/* mini player sembunyi bila seksyen lagu kelihatan */
+new IntersectionObserver(es=>es.forEach(e=>mini.classList.toggle('away',e.isIntersecting)),{threshold:.3}).observe($('#lagu'));
+
+/* ===== SPLASH ===== */
+const splash=$('#splash');
+const notes=splash.querySelector('.sp-notes');
+for(let i=0;i<10;i++){const n=document.createElement('span');n.textContent=glyphs[i%4];n.style.left=(i*10+3)+'%';n.style.bottom='-40px';n.style.animationDelay=(i*0.6)+'s';notes.appendChild(n)}
+function enter(withSong){
+  splash.classList.add('hide'); document.body.classList.remove('locked');
+  window.__entered=true; setTimeout(onScroll,600);
+  if(withSong) play();
+}
+$('#enterMusic').onclick=()=>enter(true);
+$('#enterQuiet').onclick=()=>enter(false);
+</script>
+</body>
+</html>
