@@ -9,7 +9,7 @@ Laman statik — HTML, CSS dan JavaScript sahaja. Tiada build step.
 ```
 index.html                  # laman utama (semua seksyen)
 assets/img/                 # logo, gambar penaung, halaman Profile Book
-assets/audio/               # letak kita-generasi.mp3 di sini (lagu rasmi)
+assets/audio/               # kita-generasi.mp3 (lagu rasmi)
 .github/workflows/pages.yml # deploy automatik ke GitHub Pages
 ```
 
@@ -21,7 +21,7 @@ tarikh tutup daftar dan tarikh mengundi, serta lokasi fail lagu.
 
 ## Lagu rasmi
 
-Letak fail MP3 di `assets/audio/kita-generasi.mp3`. Tanpa fail ini, pemain lagu
+Fail lagu: `assets/audio/kita-generasi.mp3`. Jika fail ini dibuang, pemain lagu
 akan papar mesej "Fail lagu belum ditemui"; bahagian lain laman tetap berfungsi.
 
 ## Lihat secara lokal
