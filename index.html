@@ -172,6 +172,7 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .party small{display:block;color:var(--muted);font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
 .party b{display:block;color:var(--blue);margin-bottom:6px;line-height:1.3}
 .party b:last-child{margin-bottom:0}
+.party .plogo{width:min(170px,100%);margin:4px 0 10px}
 .pimg img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
 .daftar .wrap>*,.penaung>*,.pb-section>*,.steps>*,.info-grid>*,.stage>*{min-width:0}
 /* marquee */
@@ -220,7 +221,6 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 @media(max-width:940px){.daftar .wrap{grid-template-columns:1fr}}
 .d-side{position:sticky;top:100px}
 @media(max-width:940px){.d-side{position:static}}
-.hash{font-family:'Unbounded';font-weight:900;font-size:clamp(2rem,5vw,3.2rem);line-height:1;margin-bottom:14px;background:linear-gradient(90deg,var(--blue),var(--red),var(--blue));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:grad 5s linear infinite}
 .d-side p{color:#2a3056;margin-bottom:20px}
 .checks{list-style:none;display:grid;gap:12px;margin-top:8px}
 .checks li{display:flex;gap:12px;align-items:flex-start;background:var(--soft);padding:14px 16px;border-radius:14px}
@@ -270,6 +270,17 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .store:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.25),transparent);transform:skewX(-20deg);animation:shine 4s ease-in-out infinite}
 .next-row{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:40px;flex-wrap:wrap}
 .next-row span{font-family:'Unbounded';font-weight:800;font-size:1.4rem;color:var(--yellow)}
+.daftar .wrap.solo{display:block}
+.next-row.on-light{margin-top:48px}
+.next-row.on-light span{color:var(--blue)}
+/* butang berdenyut */
+.beat{animation:beat 1.8s ease-in-out infinite,ringR 1.8s infinite}
+.store.beat{animation:beat 1.8s ease-in-out infinite,ring 1.8s infinite}
+.store.beat:nth-child(2){animation-delay:.3s}
+.btn.beat:hover,.store.beat:hover{animation-play-state:paused}
+@keyframes beat{0%,60%,100%{translate:0 0;scale:1}15%{translate:0 -6px;scale:1.05}30%{translate:0 0;scale:1}45%{translate:0 -3px;scale:1.025}}
+.cta-band{text-align:center;padding:48px 20px 0}
+.d-logo{width:min(100%,340px);margin:2px 0 20px}
 
 /* ===== WHATSAPP ===== */
 .wa-card{max-width:880px;margin:0 auto;border-radius:32px;padding:56px 32px;text-align:center;color:#fff;position:relative;overflow:hidden;background:radial-gradient(500px 300px at 90% 0,rgba(37,211,102,.4),transparent 60%),linear-gradient(150deg,#0f7a3e,#075e54)}
@@ -477,7 +488,10 @@ footer .socials{justify-content:center;margin:0 0 18px}
 footer .socials a.ic{background:rgba(255,255,255,.1);color:#fff}
 footer .socials a.ic:hover{background:var(--red)}
 footer .socials .handle{color:#fff;border-color:rgba(255,255,255,.2)}
-footer small{opacity:.6}
+footer small{display:block;opacity:.6}
+footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
+#whatsapp{padding-bottom:28px}
+.tentang{padding-top:36px}
 
 /* lightbox */
 .lb{position:fixed;inset:0;z-index:250;background:rgba(10,14,40,.88);display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:.3s}
@@ -560,7 +574,7 @@ footer small{opacity:.6}
       <h1 class="title" aria-label="Bersama GENERASI"><span class="w w1" data-split="BERSAMA"></span><span class="w w2" data-split="GENERASI" data-red="4"></span></h1>
       <p class="lead rv up" style="--d:.5s">So, jangan lupa, <b>1 November</b> nanti, <b>UNDI GENERASI</b>. Demi belia yang progresif, inklusif &amp; sejahtera.</p>
       <div class="hero-cta rv up" style="--d:.65s">
-        <a class="btn red" href="#daftar"><i class="fa-solid fa-user-plus"></i> Daftar Ahli</a>
+        <a class="btn red beat" href="#daftar"><i class="fa-solid fa-user-plus"></i> Daftar Ahli</a>
       </div>
       <div class="socials rv up" style="--d:.8s" data-social></div>
     </div>
@@ -628,6 +642,8 @@ footer small{opacity:.6}
   <span>PROGRESIF <i class="fa-solid fa-star"></i> INKLUSIF <i class="fa-solid fa-star"></i> SEJAHTERA <i class="fa-solid fa-star"></i> #KitaGENERASI <i class="fa-solid fa-star"></i> UNDI GENERASI 1 NOVEMBER <i class="fa-solid fa-star"></i></span>
 </div></div>
 
+<div class="cta-band rv up"><a class="btn red beat" href="#daftar"><i class="fa-solid fa-user-plus"></i> Daftar Ahli</a></div>
+
 <!-- ============ TAKWIM ============ -->
 <section class="takwim" id="takwim">
   <div class="wrap">
@@ -654,10 +670,10 @@ footer small{opacity:.6}
   <div class="wrap">
     <div class="d-side rv left">
       <div class="eyebrow">Borang Ahli</div>
-      <div class="hash">#KitaGENERASI</div>
+      <img class="d-logo" src="assets/img/logo-generasi.png" alt="GENERASI · #KitaGENERASI">
       <p><b>GENERASI Masa Depan Negara.</b> Kita mungkin berbeza pandangan, tetapi kita berkongsi harapan. Mari bina masa depan belia bersama GENERASI!</p>
       <ul class="checks">
-        <li><i class="fa-solid fa-1"></i><span>Isi borang pendaftaran ahli di sebelah.</span></li>
+        <li><i class="fa-solid fa-1"></i><span>Isi borang pendaftaran ahli.</span></li>
         <li><i class="fa-solid fa-2"></i><span>Muat turun <b>MyDigital ID</b> &amp; <b>ePBMy</b>, pilih <b>Parti Belia GENERASI Rakyat</b>.</span></li>
         <li><i class="fa-brands fa-whatsapp"></i><span>Sertai grup WhatsApp rasmi untuk makluman terkini.</span></li>
       </ul>
@@ -671,6 +687,7 @@ footer small{opacity:.6}
       <a class="jf-open" id="jfOpen" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Borang tak muncul? Tekan di sini untuk buka borang</a>
     </div>
   </div>
+  <div class="wrap solo"><div class="next-row on-light rv up"><span>SELESAI?</span><a class="btn red beat" href="#guna-mydigital">Seterusnya <i class="fa-solid fa-arrow-down"></i></a></div></div>
 </section>
 
 <!-- ============ PBMy & MyDigital ID ============ -->
@@ -682,10 +699,7 @@ footer small{opacity:.6}
     <p class="sub rv up" style="--d:.2s">Dua aplikasi ini diperlukan untuk log masuk dan mengundi dalam Parlimen Belia Malaysia.</p>
 
     <div class="info-grid">
-      <div class="info rv up"><i class="fa-solid fa-bolt"></i><p>MyDigital ID digunakan dalam sistem ePBMy bagi memudahkan proses log masuk yang lebih pantas, selamat dan efisien.</p></div>
-      <div class="info rv up" style="--d:.1s"><i class="fa-solid fa-fingerprint"></i><p>MyDigital ID juga digunakan semasa proses pengundian. Setelah anda memilih parti pilihan, anda perlu membuat e-Verification melalui MyDigital ID untuk mengesahkan identiti dan mengesahkan penghantaran undi anda.</p></div>
-      <div class="info rv up" style="--d:.15s;grid-column:1/-1"><i class="fa-solid fa-mobile-screen"></i><p>Bagi menggunakan fungsi ini, pengguna perlu mempunyai aplikasi <b>ePBMy</b> dan aplikasi <b>MyDigital ID</b> pada peranti masing-masing.</p></div>
-      <div class="uses rv zoom" style="--d:.2s">
+      <div class="uses rv zoom" id="guna-mydigital">
         <h3>MyDigital ID digunakan untuk:</h3>
         <div><b>1</b>Log masuk ke ePBMy dengan lebih pantas dan selamat.</div>
         <div><b>2</b>e-Verification untuk mengesahkan penghantaran undi semasa pilihan raya.</div>
@@ -698,18 +712,18 @@ footer small{opacity:.6}
         <h3>Muat Turun MyDigital ID</h3>
         <div class="flow"><span>Muat turun</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Ikuti langkah-langkah</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Daftar identiti digital</span></div>
         <div class="stores">
-          <a class="store play" data-link="mydigitalPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>MUAT TURUN DI</small><b>Google Play</b></span></a>
-          <a class="store" data-link="mydigitalApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>MUAT TURUN DI</small><b>App Store</b></span></a>
+          <a class="store play beat" data-link="mydigitalPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>KLIK DI SINI</small><b>Google Play</b></span></a>
+          <a class="store beat" data-link="mydigitalApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>KLIK DI SINI</small><b>App Store</b></span></a>
         </div>
       </div>
       <div class="step rv right">
         <span class="no">02</span>
         <h3>Muat Turun ePBMy</h3>
-        <div class="flow"><span>Sign-in dengan MyDigital ID</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Isi maklumat</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Sahkan perakuan</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Senarai parti</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Pilih Parti Belia GENERASI Rakyat</span></div>
-        <div class="party"><i class="fa-solid fa-flag"></i><div><small>Nama parti untuk dipilih</small><b>Parti Belia GENERASI Rakyat</b><small>Pengasas</small><b>MUHAMMAD HAIKAL BIN MOHAMMAD HATTA</b></div></div>
+        <div class="flow"><span>Sign-in dengan MyDigital ID</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Isi maklumat</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Sahkan perakuan</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Senarai parti</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Pilih Parti</span></div>
+        <div class="party"><i class="fa-solid fa-flag"></i><div><small>Nama parti untuk dipilih</small><b>Parti Belia GENERASI Rakyat</b><small>Logo parti</small><img class="plogo" src="assets/img/logo-generasi.png" alt="Logo GENERASI"><small>Pengasas</small><b>MUHAMMAD HAIKAL BIN MOHAMMAD HATTA</b></div></div>
         <div class="stores">
-          <a class="store play" data-link="epbmyPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>MUAT TURUN DI</small><b>Google Play</b></span></a>
-          <a class="store" data-link="epbmyApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>MUAT TURUN DI</small><b>App Store</b></span></a>
+          <a class="store play beat" data-link="epbmyPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>KLIK DI SINI</small><b>Google Play</b></span></a>
+          <a class="store beat" data-link="epbmyApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>KLIK DI SINI</small><b>App Store</b></span></a>
         </div>
       </div>
     </div>
@@ -804,6 +818,7 @@ footer small{opacity:.6}
   <img src="assets/img/logo-generasi.png" alt="GENERASI">
   <div class="socials" data-social></div>
   <small>© 2026 GENERASI Terengganu · Parti Belia GENERASI Rakyat · Progresif | Inklusif | Sejahtera</small>
+  <small class="credit">Laman Rasmi GENERASI Terengganu Dicipta oleh @IhsanMNi</small>
 </footer>
 
 <button class="mini" id="mini" aria-label="Main / jeda lagu Kita GENERASI">
