@@ -37,17 +37,22 @@ python3 -m http.server 8000
 2. Di GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 3. Workflow `Deploy ke GitHub Pages` akan berjalan setiap kali ada push ke `main`.
 
-## Sambung domain (kemudian)
+## Domain
 
-1. Di **Settings → Pages → Custom domain**, masukkan domain anda
-   (contoh `beliagenerasiterengganu.com`) dan tandakan **Enforce HTTPS**.
-2. Di panel DNS pendaftar domain:
-   - Domain utama (apex): rekod `A` ke `185.199.108.153`, `185.199.109.153`,
-     `185.199.110.153`, `185.199.111.153`.
-   - `www`: rekod `CNAME` ke `<nama-pengguna-github>.github.io`.
-3. Selepas domain aktif, tukar `og:image` dalam `index.html` kepada URL penuh
-   (contoh `https://beliagenerasiterengganu.com/assets/img/logo-generasi.png`)
-   supaya pratonton pautan di WhatsApp/Facebook memaparkan logo.
+Laman ini guna domain **https://generasiterengganu.online**.
+
+Tetapan di GitHub: **Settings → Pages → Custom domain** = `generasiterengganu.online`,
+dengan **Enforce HTTPS** ditanda.
+
+Rekod DNS di panel pendaftar domain:
+
+| Jenis | Nama / Host | Nilai |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | ihsanmnieditor.github.io |
 
 Laman ini juga boleh di-deploy ke Netlify, Vercel atau Cloudflare Pages —
 pilih folder root, tiada arahan build.
