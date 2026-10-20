@@ -271,8 +271,9 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .next-row{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:40px;flex-wrap:wrap}
 .next-row span{font-family:'Unbounded';font-weight:800;font-size:1.4rem;color:var(--yellow)}
 .daftar .wrap.solo{display:block}
-.next-row.on-light{margin-top:48px}
-.next-row.on-light span{color:var(--blue)}
+.next-row.band{position:relative;overflow:hidden;margin:48px auto 0;max-width:640px;padding:22px 24px;border-radius:24px;background:linear-gradient(160deg,var(--blue-2),var(--blue-d));box-shadow:0 20px 40px -20px rgba(22,36,110,.6)}
+.next-row.band:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.04) 0 2px,transparent 2px 22px);pointer-events:none}
+.next-row.band>*{position:relative}
 /* butang berdenyut */
 .beat{animation:beat 1.8s ease-in-out infinite,ringR 1.8s infinite}
 .store.beat{animation:beat 1.8s ease-in-out infinite,ring 1.8s infinite}
@@ -687,7 +688,7 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
       <a class="jf-open" id="jfOpen" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Borang tak muncul? Tekan di sini untuk buka borang</a>
     </div>
   </div>
-  <div class="wrap solo"><div class="next-row on-light rv up"><span>SELESAI?</span><a class="btn red beat" href="#guna-mydigital">Seterusnya <i class="fa-solid fa-arrow-down"></i></a></div></div>
+  <div class="wrap solo"><div class="next-row band rv up"><span>SELESAI?</span><a class="btn red" href="#guna-mydigital">Seterusnya <i class="fa-solid fa-arrow-down"></i></a></div></div>
 </section>
 
 <!-- ============ PBMy & MyDigital ID ============ -->
