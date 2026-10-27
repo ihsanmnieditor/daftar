@@ -56,3 +56,8 @@ Rekod DNS di panel pendaftar domain:
 
 Laman ini juga boleh di-deploy ke Netlify, Vercel atau Cloudflare Pages —
 pilih folder root, tiada arahan build.
+
+## Sumber bendera
+
+`assets/img/bendera-terengganu.svg` dan `assets/img/bendera-kelantan.svg` diambil
+daripada Wikimedia Commons (`File:Flag_of_Terengganu.svg`, `File:Flag_of_Kelantan.svg`).
