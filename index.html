@@ -298,6 +298,9 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .wa-state:nth-child(2):after{animation-delay:.35s}
 .wa-state:hover{animation-play-state:paused}
 .wa-state:active{transform:translateY(5px);box-shadow:0 2px 0 #b9d9c6,0 8px 14px -8px rgba(0,0,0,.45)}
+.wa-state.off{animation:none;cursor:not-allowed;filter:grayscale(.9);opacity:.7}
+.wa-state.off:after{display:none}
+.wa-state.off:active{transform:none;box-shadow:0 7px 0 #b9d9c6,0 18px 28px -10px rgba(0,0,0,.45)}
 .wa-state .flag{flex:none;width:76px;height:38px;border-radius:8px;background:#fff;overflow:hidden;box-shadow:0 0 0 2px #fff,0 4px 10px rgba(0,0,0,.25)}
 .wa-state .flag img{display:block;width:100%;height:100%;object-fit:cover}
 .wa-state .wt{flex:1;min-width:0;line-height:1.2}
@@ -600,8 +603,8 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
         <div class="cd-title"><strong>TUTUP DAFTAR</strong><small data-when>28 Okt 2026 · 11:59 malam</small></div>
         <div class="units"><div><b data-u="d">--</b><span>Hari</span></div><div><b data-u="h">--</b><span>Jam</span></div><div><b data-u="m">--</b><span>Minit</span></div><div><b data-u="s">--</b><span>Saat</span></div></div>
       </div>
-      <div class="cd-row" data-cd="voteDate" data-end="voteEnd" data-live-title="UNDIAN DIBUKA · BERBAKI" data-live-when="Ditutup 2 Nov 2026 · 9:00 pagi" data-done="Pengundian telah tamat">
-        <div class="cd-title"><strong data-head>HARI MENGUNDI</strong><small data-when>1 Nov 2026 · 9:00 pagi (24 jam)</small></div>
+      <div class="cd-row" data-cd="voteEnd" data-done="Pengundian telah ditutup">
+        <div class="cd-title"><strong data-head>TUTUP MENGUNDI</strong><small data-when>2 Nov 2026 · 9:00 pagi</small></div>
         <div class="units"><div><b data-u="d">--</b><span>Hari</span></div><div><b data-u="h">--</b><span>Jam</span></div><div><b data-u="m">--</b><span>Minit</span></div><div><b data-u="s">--</b><span>Saat</span></div></div>
       </div>
     </div>
@@ -756,16 +759,16 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
       <h2>Sertai Grup WhatsApp Rasmi</h2>
       <p>Pilih grup negeri anda untuk makluman terkini Parti Belia GENERASI Rakyat, dan jangan lupa: 1 November nanti, <b>UNDI GENERASI</b>!</p>
       <div class="wa-list">
-        <a class="wa-state" data-link="whatsappGroup" target="_blank" rel="noopener" aria-label="Sertai grup WhatsApp GENERASI Terengganu">
+        <span class="wa-state off" aria-disabled="true" aria-label="Grup WhatsApp GENERASI Terengganu (tidak aktif)">
           <span class="flag"><img src="assets/img/bendera-terengganu.svg" alt="Bendera Terengganu"></span>
-          <span class="wt"><small>Grup WhatsApp</small><b>TERENGGANU</b><em>Klik di sini untuk sertai</em></span>
+          <span class="wt"><small>Grup WhatsApp</small><b>TERENGGANU</b><em>Pautan tidak aktif</em></span>
           <span class="go"><i class="fa-brands fa-whatsapp"></i></span>
-        </a>
-        <a class="wa-state" data-link="whatsappKelantan" target="_blank" rel="noopener" aria-label="Sertai grup WhatsApp GENERASI Kelantan">
+        </span>
+        <span class="wa-state off" aria-disabled="true" aria-label="Grup WhatsApp GENERASI Kelantan (tidak aktif)">
           <span class="flag"><img src="assets/img/bendera-kelantan.svg" alt="Bendera Kelantan"></span>
-          <span class="wt"><small>Grup WhatsApp</small><b>KELANTAN</b><em>Klik di sini untuk sertai</em></span>
+          <span class="wt"><small>Grup WhatsApp</small><b>KELANTAN</b><em>Pautan tidak aktif</em></span>
           <span class="go"><i class="fa-brands fa-whatsapp"></i></span>
-        </a>
+        </span>
       </div>
     </div>
   </div>
