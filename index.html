@@ -167,14 +167,8 @@ h1.title .w2 .ch{background:linear-gradient(90deg,var(--blue) 0%,var(--blue-2) 4
 body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 @keyframes ringR{0%{box-shadow:0 0 0 0 rgba(226,64,47,.5)}70%{box-shadow:0 0 0 12px rgba(226,64,47,0)}100%{box-shadow:0 0 0 0 rgba(226,64,47,0)}}
 @media(max-width:940px){.cd-card{order:-1}}
-.party{display:flex;gap:12px;align-items:flex-start;background:#fff4f2;border:1.5px solid #f6cfc9;border-left:5px solid var(--red);border-radius:14px;padding:12px 14px;margin:-6px 0 18px;position:relative}
-.party>i{color:var(--red);margin-top:4px}
-.party small{display:block;color:var(--muted);font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-.party b{display:block;color:var(--blue);margin-bottom:6px;line-height:1.3}
-.party b:last-child{margin-bottom:0}
-.party .plogo{width:min(170px,100%);margin:4px 0 10px}
 .pimg img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
-.daftar .wrap>*,.penaung>*,.pb-section>*,.steps>*,.info-grid>*,.stage>*{min-width:0}
+.tc-body,.penaung>*,.pb-section>*,.stage>*{min-width:0}
 /* marquee */
 .marquee{background:var(--blue);color:#fff;overflow:hidden;padding:16px 0;transform:rotate(-1.2deg) scaleX(1.03);margin:-10px 0 0;box-shadow:0 10px 30px -10px rgba(22,36,110,.5)}
 .marquee .track{display:flex;gap:40px;width:max-content;animation:marq 26s linear infinite;font-family:'Unbounded';font-weight:800;font-size:1.05rem;letter-spacing:.06em}
@@ -216,50 +210,47 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .pil:nth-child(2) i{background:var(--red)}.pil:nth-child(3) i{background:var(--yellow);color:var(--blue-d)}
 @media(max-width:720px){.pillars{grid-template-columns:1fr}}
 
-/* ===== DAFTAR ===== */
-.daftar .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
-@media(max-width:940px){.daftar .wrap{grid-template-columns:1fr}}
-.d-side{position:sticky;top:100px}
-@media(max-width:940px){.d-side{position:static}}
-.d-side p{color:#2a3056;margin-bottom:20px}
-.checks{list-style:none;display:grid;gap:12px;margin-top:8px}
-.checks li{display:flex;gap:12px;align-items:flex-start;background:var(--soft);padding:14px 16px;border-radius:14px}
-.checks li i{color:#fff;background:var(--blue);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;flex:none;margin-top:1px}
-.checks li:nth-child(2) i{background:var(--red)}.checks li:nth-child(3) i{background:#128c46}
-.jf-card{background:#fff;border-radius:26px;padding:10px;box-shadow:0 30px 60px -24px rgba(22,36,110,.4);border:1.5px solid var(--line);position:relative}
-.jf-card:before{content:"";position:absolute;inset:-2px;border-radius:28px;padding:2px;background:linear-gradient(135deg,var(--blue),var(--red),var(--yellow));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.jf-wrap{position:relative;border-radius:18px;overflow:hidden;background:#fff}
-.jf-wrap iframe{display:block;width:100%;min-width:100%;border:0;height:1150px;transition:height .3s}
-.jf-cover{position:absolute;left:0;right:0;bottom:0;background:#fff;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:.85rem;font-weight:600}
-.jf-cover i{color:#128c46}
-.jf-open{display:flex;justify-content:center;align-items:center;gap:8px;margin:10px 4px 4px;padding:12px;border-radius:14px;background:var(--soft);color:var(--blue);font-weight:700;text-decoration:none;font-size:.92rem;text-align:center}
-.jf-open:hover{background:#e3e8fb}
-.jf-loading{position:absolute;inset:0;display:grid;place-items:center;background:#fff;color:var(--blue);font-weight:700;transition:opacity .4s}
-.jf-loading.done{opacity:0;pointer-events:none}
-.spinner{width:42px;height:42px;border-radius:50%;border:4px solid var(--soft);border-top-color:var(--red);animation:spin 1s linear infinite;margin:0 auto 10px}
+/* ===== TATACARA MENGUNDI ===== */
+.undi{background:linear-gradient(180deg,#fff,#eef1fb)}
+.tc{max-width:880px;margin:0 auto;background:#fbfcff;border-radius:32px;padding:36px 40px 28px;border:1.5px solid var(--line);box-shadow:0 30px 60px -28px rgba(22,36,110,.35)}
+.tc-head{display:grid;grid-template-columns:1fr auto;gap:20px 28px;align-items:end;padding-bottom:22px;border-bottom:2px solid #1d2a5c}
+.tc-kick{font-family:'Unbounded';font-weight:700;font-size:.7rem;letter-spacing:.24em;color:#1d2a5c;margin-bottom:10px}
+.tc-title{font-family:'Unbounded';font-weight:900;font-size:clamp(2rem,6vw,3.3rem);line-height:.95;color:#0e1847;letter-spacing:-.01em}
+.tc-title i{display:inline-grid;place-items:center;width:1.05em;height:1.05em;font-size:.6em;background:#1f5eea;color:#fff;border-radius:12px;vertical-align:.35em;margin-left:.15em}
+.tc-sub{margin-top:12px;font-weight:600;color:#2a3056;font-size:1.08rem}
+.tc-side{display:grid;gap:12px;justify-items:center}
+.tc-side img{width:190px}
+.tc-date{background:#1f5eea;color:#fff;border-radius:18px;padding:14px 24px;text-align:center;font-family:'Unbounded';font-weight:800;box-shadow:0 14px 28px -14px rgba(31,94,234,.8)}
+.tc-date span{display:block;font-size:.95rem;padding-bottom:8px;margin-bottom:6px;border-bottom:2px solid rgba(255,255,255,.55)}
+.tc-date b{display:block;font-size:2rem;font-weight:900;letter-spacing:.04em}
+.tc-step{display:grid;grid-template-columns:auto auto 1fr;gap:18px 22px;align-items:start;padding:24px 0;border-bottom:1.5px solid var(--line)}
+.tc-no{font-family:'Unbounded';font-weight:900;font-size:3.3rem;line-height:1;color:#1f5eea;padding-right:22px;border-right:2px solid #c9d2ee;min-width:2.4em}
+.tc-ic{width:66px;height:66px;border-radius:50%;background:#e4ebfd;color:#0e1847;display:grid;place-items:center;font-size:1.6rem}
+.tc-body h3{font-family:'Unbounded';font-size:1.15rem;color:#0e1847;margin:6px 0 6px}
+.tc-body p{color:#2a3056}
+.tc-lbl{display:block;margin:16px 0 8px;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tc-note{display:flex;gap:10px;align-items:flex-start;margin-top:16px;background:#fff7d6;border-left:4px solid var(--yellow);border-radius:12px;padding:10px 14px;font-weight:600;color:#3b3200;font-size:.92rem}
+.tc-note i{color:#b88a00;margin-top:3px}
+.tc .store{min-width:0;flex:0 1 190px}
+.tc-before{display:flex;gap:18px;align-items:center;margin-top:24px;background:#e4ebfd;border-radius:18px;padding:16px 22px}
+.tc-before>i{font-size:1.8rem;color:#0e1847;padding-right:18px;border-right:2px solid #c9d2ee}
+.tc-before h4{font-family:'Unbounded';font-size:1rem;color:#0e1847}
+.tc-before p{color:#2a3056}
+.tc-foot{text-align:center;margin-top:24px;padding-top:18px;border-top:2px solid #1d2a5c}
+.tc-foot b{display:block;font-family:'Unbounded';font-weight:900;font-size:clamp(1.1rem,3.4vw,1.6rem);color:#0e1847}
+.tc-foot small{color:var(--muted)}
+@media(max-width:700px){
+  .tc{padding:24px 18px 20px;border-radius:24px}
+  .tc-head{grid-template-columns:1fr}
+  .tc-side{grid-auto-flow:column;justify-content:start;align-items:center}
+  .tc-side img{width:130px}
+  .tc-date{padding:10px 16px}.tc-date span{font-size:.75rem}.tc-date b{font-size:1.4rem}
+  .tc-step{grid-template-columns:auto 1fr;gap:6px 14px}
+  .tc-no{font-size:2.3rem;padding-right:14px;min-width:0}
+  .tc-ic{display:none}
+  .tc .store{flex:1 1 140px}
+}
 
-/* ===== PBMy ===== */
-.pbmy{background:linear-gradient(160deg,var(--blue-2),var(--blue-d));color:#fff;overflow:hidden}
-.pbmy .lines{position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.04) 0 2px,transparent 2px 22px);pointer-events:none}
-.pbmy .h2{color:#fff}.pbmy .eyebrow{color:var(--yellow)}
-.pbmy .sub{color:rgba(255,255,255,.82)}
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:38px 0 44px}
-@media(max-width:800px){.info-grid{grid-template-columns:1fr}}
-.info{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:18px 20px;display:flex;gap:14px;backdrop-filter:blur(6px)}
-.info i{flex:none;width:40px;height:40px;border-radius:12px;background:var(--yellow);color:var(--blue-d);display:grid;place-items:center}
-.uses{background:#fff;color:var(--ink);border-radius:18px;padding:18px 20px;grid-column:1/-1;display:grid;grid-template-columns:auto 1fr 1fr;gap:16px;align-items:center}
-.uses h3{font-size:.9rem;color:var(--blue);max-width:9em}
-.uses div{display:flex;gap:12px;align-items:center;font-weight:600}
-.uses div b{flex:none;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:'Unbounded'}
-@media(max-width:800px){.uses{grid-template-columns:1fr}}
-.steps{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-@media(max-width:860px){.steps{grid-template-columns:1fr}}
-.step{background:#fff;color:var(--ink);border-radius:24px;padding:26px;position:relative;overflow:hidden}
-.step .no{position:absolute;right:-6px;top:-24px;font-family:'Unbounded';font-weight:900;font-size:7rem;color:var(--soft);line-height:1}
-.step h3{position:relative;font-size:1.25rem;color:var(--blue);margin-bottom:8px}
-.step .flow{position:relative;display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 20px}
-.step .flow span{background:var(--soft);color:var(--blue);font-weight:600;font-size:.85rem;padding:6px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:6px}
-.step .flow span.hl{background:var(--red);color:#fff}.step .flow span.ar{background:none;padding:6px 2px;color:var(--red)}
 .stores{position:relative;display:flex;gap:10px;flex-wrap:wrap}
 .store{display:inline-flex;align-items:center;gap:12px;background:#0d0f1f;color:#fff;text-decoration:none;border-radius:14px;padding:10px 18px 10px 14px;min-width:178px;transition:.25s var(--ease);position:relative;overflow:hidden}
 .store i{font-size:1.75rem;width:28px;text-align:center}
@@ -268,12 +259,6 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .store:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.5)}
 .store.play i{background:linear-gradient(135deg,#00d7fe,#00f076 40%,#ffc900 70%,#ff3a44);-webkit-background-clip:text;background-clip:text;color:transparent}
 .store:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.25),transparent);transform:skewX(-20deg);animation:shine 4s ease-in-out infinite}
-.next-row{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:40px;flex-wrap:wrap}
-.next-row span{font-family:'Unbounded';font-weight:800;font-size:1.4rem;color:var(--yellow)}
-.daftar .wrap.solo{display:block}
-.next-row.band{position:relative;overflow:hidden;margin:48px auto 0;max-width:640px;padding:22px 24px;border-radius:24px;background:linear-gradient(160deg,var(--blue-2),var(--blue-d));box-shadow:0 20px 40px -20px rgba(22,36,110,.6)}
-.next-row.band:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.04) 0 2px,transparent 2px 22px);pointer-events:none}
-.next-row.band>*{position:relative}
 /* butang berdenyut */
 .beat{animation:beat 1.8s ease-in-out infinite,ringR 1.8s infinite}
 .store.beat{animation:beat 1.8s ease-in-out infinite,ring 1.8s infinite}
@@ -281,7 +266,6 @@ body.song-on .cd-music .eq i{animation:eq .9s ease-in-out infinite}
 .btn.beat:hover,.store.beat:hover{animation-play-state:paused}
 @keyframes beat{0%,60%,100%{translate:0 0;scale:1}15%{translate:0 -6px;scale:1.05}30%{translate:0 0;scale:1}45%{translate:0 -3px;scale:1.025}}
 .cta-band{text-align:center;padding:48px 20px 0}
-.d-logo{width:min(100%,340px);margin:2px 0 20px}
 
 /* ===== WHATSAPP ===== */
 .wa-card{max-width:880px;margin:0 auto;border-radius:32px;padding:56px 32px;text-align:center;color:#fff;position:relative;overflow:hidden;background:radial-gradient(500px 300px at 90% 0,rgba(37,211,102,.4),transparent 60%),linear-gradient(150deg,#0f7a3e,#075e54)}
@@ -575,8 +559,7 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     <ul class="menu" id="menu">
       <li><a href="#utama" class="active">Utama</a></li>
-      <li><a href="#daftar">Daftar</a></li>
-      <li><a href="#pbmy">Aplikasi PBMy &amp; MyDigital ID</a></li>
+      <li><a href="#undi">Cara Mengundi</a></li>
       <li><a href="#whatsapp" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
       <li><a href="#tentang">Tentang Kami</a></li>
     </ul>
@@ -592,7 +575,7 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
       <h1 class="title" aria-label="Bersama GENERASI"><span class="w w1" data-split="BERSAMA"></span><span class="w w2" data-split="GENERASI" data-red="4"></span></h1>
       <p class="lead rv up" style="--d:.5s">So, jangan lupa, <b>1 November</b> nanti, <b>UNDI GENERASI</b>. Demi belia yang progresif, inklusif &amp; sejahtera.</p>
       <div class="hero-cta rv up" style="--d:.65s">
-        <a class="btn red beat" href="#daftar"><i class="fa-solid fa-user-plus"></i> Daftar Ahli</a>
+        <a class="btn red beat" href="#undi"><i class="fa-solid fa-check-to-slot"></i> Cara Mengundi</a>
       </div>
       <div class="socials rv up" style="--d:.8s" data-social></div>
     </div>
@@ -660,7 +643,7 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
   <span>PROGRESIF <i class="fa-solid fa-star"></i> INKLUSIF <i class="fa-solid fa-star"></i> SEJAHTERA <i class="fa-solid fa-star"></i> #KitaGENERASI <i class="fa-solid fa-star"></i> UNDI GENERASI 1 NOVEMBER <i class="fa-solid fa-star"></i></span>
 </div></div>
 
-<div class="cta-band rv up"><a class="btn red beat" href="#daftar"><i class="fa-solid fa-user-plus"></i> Daftar Ahli</a></div>
+<div class="cta-band rv up"><a class="btn red beat" href="#undi"><i class="fa-solid fa-check-to-slot"></i> Cara Mengundi</a></div>
 
 <!-- ============ TAKWIM ============ -->
 <section class="takwim" id="takwim">
@@ -683,69 +666,67 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
   </div>
 </section>
 
-<!-- ============ DAFTAR ============ -->
-<section class="daftar" id="daftar">
+<!-- ============ TATACARA MENGUNDI ============ -->
+<section class="undi" id="undi">
   <div class="wrap">
-    <div class="d-side rv left">
-      <div class="eyebrow">Borang Ahli</div>
-      <img class="d-logo" src="assets/img/logo-generasi.png" alt="GENERASI · #KitaGENERASI">
-      <p><b>GENERASI Masa Depan Negara.</b> Kita mungkin berbeza pandangan, tetapi kita berkongsi harapan. Mari bina masa depan belia bersama GENERASI!</p>
-      <ul class="checks">
-        <li><i class="fa-solid fa-1"></i><span>Isi borang pendaftaran ahli.</span></li>
-        <li><i class="fa-solid fa-2"></i><span>Muat turun <b>MyDigital ID</b> &amp; <b>ePBMy</b>, pilih <b>Parti Belia GENERASI Rakyat</b>.</span></li>
-        <li><i class="fa-brands fa-whatsapp"></i><span>Sertai grup WhatsApp rasmi untuk makluman terkini.</span></li>
-      </ul>
-    </div>
-    <div class="jf-card rv right">
-      <div class="jf-wrap" id="jfWrap">
-        <iframe id="jfFrame" title="Borang Pendaftaran GENERASI" scrolling="no"></iframe>
-        <div class="jf-cover" id="jfCover"><i class="fa-solid fa-lock"></i> Maklumat anda selamat bersama GENERASI</div>
-        <div class="jf-loading" id="jfLoad"><div><div class="spinner"></div>Memuatkan borang…</div></div>
-      </div>
-      <a class="jf-open" id="jfOpen" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Borang tak muncul? Tekan di sini untuk buka borang</a>
-    </div>
-  </div>
-  <div class="wrap solo"><div class="next-row band rv up"><span>SELESAI?</span><a class="btn red" href="#guna-mydigital">Seterusnya <i class="fa-solid fa-arrow-down"></i></a></div></div>
-</section>
-
-<!-- ============ PBMy & MyDigital ID ============ -->
-<section class="pbmy" id="pbmy">
-  <div class="lines"></div>
-  <div class="wrap" style="position:relative">
-    <div class="eyebrow rv up">Aplikasi PBMy &amp; MyDigital ID</div>
-    <h2 class="h2 rv up" style="--d:.1s">Muat Turun MyDigital ID &amp; ePBMy</h2>
-    <p class="sub rv up" style="--d:.2s">Dua aplikasi ini diperlukan untuk log masuk dan mengundi dalam Parlimen Belia Malaysia.</p>
-
-    <div class="info-grid">
-      <div class="uses rv zoom" id="guna-mydigital">
-        <h3>MyDigital ID digunakan untuk:</h3>
-        <div><b>1</b>Log masuk ke ePBMy dengan lebih pantas dan selamat.</div>
-        <div><b>2</b>e-Verification untuk mengesahkan penghantaran undi semasa pilihan raya.</div>
-      </div>
-    </div>
-
-    <div class="steps">
-      <div class="step rv left">
-        <span class="no">01</span>
-        <h3>Muat Turun MyDigital ID</h3>
-        <div class="flow"><span>Muat turun</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Ikuti langkah-langkah</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Daftar identiti digital</span></div>
-        <div class="stores">
-          <a class="store play beat" data-link="mydigitalPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>KLIK DI SINI</small><b>Google Play</b></span></a>
-          <a class="store beat" data-link="mydigitalApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>KLIK DI SINI</small><b>App Store</b></span></a>
+    <div class="tc rv up">
+      <div class="tc-head">
+        <div>
+          <div class="tc-kick">PARLIMEN BELIA MALAYSIA</div>
+          <h2 class="tc-title">TATACARA<br>MENGUNDI<i class="fa-solid fa-check"></i></h2>
+          <p class="tc-sub">Melalui aplikasi ePBMy</p>
+        </div>
+        <div class="tc-side">
+          <img src="assets/img/logo-generasi.png" alt="GENERASI · Parti Generasi Rakyat">
+          <div class="tc-date"><span>1 NOVEMBER 2026</span><b>AHAD</b></div>
         </div>
       </div>
-      <div class="step rv right">
-        <span class="no">02</span>
-        <h3>Muat Turun ePBMy</h3>
-        <div class="flow"><span>Sign-in dengan MyDigital ID</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Isi maklumat</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Sahkan perakuan</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span>Senarai parti</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span><span class="hl">Pilih Parti</span></div>
-        <div class="party"><i class="fa-solid fa-flag"></i><div><small>Nama parti untuk dipilih</small><b>Parti Belia GENERASI Rakyat</b><small>Logo parti</small><img class="plogo" src="assets/img/logo-generasi.png" alt="Logo GENERASI"><small>Pengasas</small><b>MUHAMMAD HAIKAL BIN MOHAMMAD HATTA</b></div></div>
-        <div class="stores">
-          <a class="store play beat" data-link="epbmyPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>KLIK DI SINI</small><b>Google Play</b></span></a>
-          <a class="store beat" data-link="epbmyApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>KLIK DI SINI</small><b>App Store</b></span></a>
+
+      <div class="tc-step">
+        <div class="tc-no">01</div>
+        <div class="tc-ic"><i class="fa-regular fa-user"></i></div>
+        <div class="tc-body">
+          <h3>LOG MASUK ePBMy</h3>
+          <p>Buka aplikasi dan log masuk ke akaun anda menggunakan <b>MyDigital ID</b>.</p>
+          <span class="tc-lbl">Muat turun ePBMy</span>
+          <div class="stores">
+            <a class="store play beat" data-link="epbmyPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>KLIK DI SINI</small><b>Google Play</b></span></a>
+            <a class="store beat" data-link="epbmyApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>KLIK DI SINI</small><b>App Store</b></span></a>
+          </div>
+          <div class="tc-note"><i class="fa-solid fa-circle-exclamation"></i><span>Pastikan anda sudah mempunyai aplikasi <b>MyDigital ID</b>.</span></div>
+          <span class="tc-lbl">Muat turun MyDigital ID</span>
+          <div class="stores">
+            <a class="store play beat" data-link="mydigitalPlay" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><small>KLIK DI SINI</small><b>Google Play</b></span></a>
+            <a class="store beat" data-link="mydigitalApple" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i><span><small>KLIK DI SINI</small><b>App Store</b></span></a>
+          </div>
         </div>
       </div>
+
+      <div class="tc-step">
+        <div class="tc-no">02</div>
+        <div class="tc-ic"><i class="fa-regular fa-rectangle-list"></i></div>
+        <div class="tc-body"><h3>PILIH PARTI</h3><p>Semak pilihan parti yang ingin anda undi.</p></div>
+      </div>
+
+      <div class="tc-step">
+        <div class="tc-no">03</div>
+        <div class="tc-ic"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="tc-body"><h3>SAHKAN DENGAN MyDigital ID</h3><p>Lengkapkan e-Verification untuk mengesahkan penghantaran undi.</p></div>
+      </div>
+
+      <div class="tc-step">
+        <div class="tc-no">04</div>
+        <div class="tc-ic"><i class="fa-solid fa-check-to-slot"></i></div>
+        <div class="tc-body"><h3>PASTIKAN UNDI BERJAYA</h3><p>Semak pengesahan bahawa undi anda telah dihantar.</p></div>
+      </div>
+
+      <div class="tc-before">
+        <i class="fa-regular fa-file-lines"></i>
+        <div><h4>SEBELUM MENGUNDI</h4><p>Sediakan aplikasi ePBMy dan MyDigital ID pada peranti anda.</p></div>
+      </div>
+
+      <div class="tc-foot"><b>SUARA ANDA. PILIHAN ANDA.</b><small>Rujukan: pbmy.parlimen.gov.my</small></div>
     </div>
-    <div class="next-row rv up"><span>SELESAI?</span><a class="btn red" href="#whatsapp">Seterusnya <i class="fa-solid fa-arrow-down"></i></a></div>
   </div>
 </section>
 
@@ -863,8 +844,6 @@ footer small.credit{margin-top:8px;opacity:.85;font-weight:600}
 <script>
 /* ====== TETAPAN – UBAH DI SINI ====== */
 const CONFIG = {
-  jotformId: "262866598775078",
-  jotformCover: 96,          // tinggi (px) jalur putih yang menutup watermark Jotform di bawah borang. Laraskan jika perlu.
   whatsappGroup: "https://chat.whatsapp.com/G9utnVy4n0hDxa1QyajZ2T",     // grup Terengganu
   whatsappKelantan: "https://chat.whatsapp.com/DjLBHJRdpOlIfSUTabuNXq",  // grup Kelantan
   mydigitalPlay: "https://play.google.com/store/apps/details?id=my.mimos.signetclient",
@@ -927,7 +906,7 @@ tick(); setInterval(tick,1000);
 const nav=$('#nav'), menu=$('#menu'), burger=$('#burger');
 burger.onclick=()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
 $$('#menu a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
-const navSecs=['utama','daftar','pbmy','whatsapp','tentang'].map(id=>document.getElementById(id));
+const navSecs=['utama','undi','whatsapp','tentang'].map(id=>document.getElementById(id));
 const tl=$('#tl'), tlLine=$('.tl-line i');
 function onScroll(){
   const y=scrollY, H=document.documentElement.scrollHeight-innerHeight;
@@ -955,21 +934,6 @@ addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')})
 
 /* toast */
 let tt; function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),3800)}
-
-/* ===== JOTFORM ===== */
-const jf=$('#jfFrame'), cover=$('#jfCover');
-cover.style.height=CONFIG.jotformCover+'px';
-jf.src='https://form.jotform.com/'+CONFIG.jotformId;
-$('#jfOpen').href='https://form.jotform.com/'+CONFIG.jotformId;
-jf.addEventListener('load',()=>$('#jfLoad').classList.add('done'));
-addEventListener('message',e=>{
-  if(!/jotform\.(com|co|net|us|pro)|jotfor\.ms/.test(e.origin||'')) return;
-  if(typeof e.data!=='string') return;
-  const a=e.data.split(':');
-  if(a[0]==='setHeight'){const h=parseInt(a[1],10); if(h>100) jf.style.height=h+'px'}
-  else if(a[0]==='scrollIntoView'){jf.scrollIntoView({behavior:'smooth',block:'start'})}
-  else if(a[0]==='collapseErrorPage' && jf.clientHeight>innerHeight){jf.style.height=innerHeight+'px'}
-});
 
 /* ===== PENAUNG baca lagi ===== */
 const pnB=$('#pnBody'), pnM=$('#pnMore');
